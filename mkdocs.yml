@@ -31,7 +31,7 @@ theme:
       # top-level selection move to top tabs
       - navigation.tabs
       # default to be expand
-      - navigation.expand
+      # - navigation.expand
       # enable turn to before  or after  page in page button
       - navigation.footer
       # back to top
