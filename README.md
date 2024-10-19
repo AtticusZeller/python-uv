@@ -105,4 +105,6 @@ todo：codecov ci and replace coverage with it
 
 ### commitzen
 
+   - [x] basic use
+   - [ ] instruction for docs
 ### copier
