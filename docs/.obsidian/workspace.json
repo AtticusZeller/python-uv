@@ -13,11 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS/Language/python/Venv/UV.md",
+                "file": "index.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
         ]
@@ -40,7 +42,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -48,7 +52,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           },
           {
@@ -63,7 +69,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           }
         ]
@@ -86,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS/Language/python/Venv/UV.md",
+                "file": "index.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -94,7 +102,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for index"
             }
           },
           {
@@ -103,10 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS/Language/python/Venv/UV.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from index"
             }
           },
           {
@@ -117,7 +129,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -129,7 +143,9 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           },
           {
@@ -138,36 +154,14 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS/Language/python/Venv/UV.md"
-              }
-            }
-          },
-          {
-            "id": "6c7a22ce9a44906b",
-            "type": "leaf",
-            "state": {
-              "type": "code-execute-manage-executors",
-              "state": {}
-            }
-          },
-          {
-            "id": "b02e2e30d05790c3",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {}
-            }
-          },
-          {
-            "id": "79aef470e1fbe4d9",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
+                "file": "index.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of index"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -188,8 +182,9 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "0cb70fb2c9b28a6e",
+  "active": "fe33bc386c72aa8e",
   "lastOpenFiles": [
+    "index.md",
     "CS/Language/python/Ruff.md",
     "CS/Frontend/React/Next.js.md",
     "CS/Frontend/React",
@@ -203,7 +198,6 @@
     "Learning/Reading list.md",
     "CS/VCS/Pre-commit.md",
     "CS/Backend/DB/PostgreSQL.md",
-    "index.md",
     "Paper/journals/IET/ITE computer vision.md",
     "Paper/journals/IET/Cover question.md",
     "CS/tools/IDE/JetBrains.md",

@@ -4,7 +4,6 @@
   "url-into-selection",
   "omnisearch",
   "obsidian-image-toolkit",
-  "obsidian-git",
   "obsidian-excalidraw-plugin",
   "editing-toolbar",
   "obsidian-auto-link-title",
@@ -15,5 +14,6 @@
   "emoji-autocomplete",
   "obsidian-latex-suite",
   "text-extractor",
-  "oz-clear-unused-images"
+  "oz-clear-unused-images",
+  "find-unlinked-files"
 ]

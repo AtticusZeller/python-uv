@@ -1,5 +1,5 @@
 /**
- * Based on https://github.com/Fevol/obsidian-translate/blob/master/src/ui/translator-components/SettingsPage.svelte
+ * Based on https://github.com/Fevol/obsidian-translate/blob/master/src/ui/translator-components/SettingsPage.svelte 
  */
 
 .linter-navigation-item {
@@ -21,7 +21,7 @@
   overflow: hidden;
 
   background-color: var(--background-primary-secondary-alt);
-
+  
   transition: color 0.25s ease-in-out,
         padding 0.25s ease-in-out,
         background-color 0.35s cubic-bezier(0.45, 0.25, 0.83, 0.67),
@@ -41,7 +41,7 @@
   }
 }
 
-.linter-navigation-item-icon {
+.linter-navigation-item-icon, .linter-warning {
   padding-top: 5px;
 }
 
@@ -125,7 +125,7 @@
   border-right: 2px solid var(--background-modifier-border);
 }
 
-/** Hide linter element css
+/** Hide linter element css 
  * Based on https://zellwk.com/blog/hide-content-accessibly/
  */
 .linter-navigation-item:not(.linter-navigation-item-selected) > span:nth-child(2),
@@ -237,8 +237,36 @@ textarea.full-width {
 }
 
 /**
+* Settings item border bottom
+*/
+.linter-border-bottom {
+  border-top: 0px;
+  border-bottom: 1px solid var(--background-modifier-border);
+  margin-bottom: .75em;
+}
+
+/**
+* Settings item padding top removal to make toggles and other elements line up with description when no info is present
+*/
+.linter-no-padding-top {
+  padding-top: 0px;
+}
+
+/**
 * Custom row
 */
 .custom-row-description {
   margin-top: 0px;
 }
+
+/**
+* Modal specific styles and search zero state
+*/
+.modal-warn, .search-zero-state {
+  font-weight: bold;
+}
+
+.modal-heading, .search-zero-state {
+  text-align: center;
+}
+
