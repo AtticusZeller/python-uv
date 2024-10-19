@@ -46,10 +46,7 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.ATTICUS_PAT }}
 
-      - name: Bump and create changelog
-        uses: commitizen-tools/commitizen-action@master
-        with:
-          github_token: ${{ secrets.ATTICUS_PAT }}
+
 
       - name: Release
         uses: softprops/action-gh-release@master
