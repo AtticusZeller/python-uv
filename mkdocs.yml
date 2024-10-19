@@ -1,7 +1,7 @@
-# Copyright (c) 2016-2024 Atticus Zhou <zhouge1831@gmail.com>
+# Copyright (c) 2016-2024 A.J.Zeller <zhouge1831@gmail.com>
 
 # Project information
-site_name: Atticus Zhou
+site_name: python-uv
 site_url: https://atticuszz.github.io/python-uv
 
 # Repository
@@ -11,7 +11,7 @@ repo_name: python-uv
 edit_uri: edit/main/docs
 
 # Copyright
-copyright: Copyright &copy; 2016 - 2024 Atticus Zhou
+copyright: Copyright &copy; 2016 - 2024 A.J.Zeller
 
 # Configuration
 theme:
