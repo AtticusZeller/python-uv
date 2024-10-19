@@ -1,3 +1,9 @@
+## 0.0.4 (2024-10-19)
+
+### Fix
+
+- **.obsidian**: remove obsidian-git plugin
+
 ## 0.0.3 (2024-10-19)
 
 ### Fix
