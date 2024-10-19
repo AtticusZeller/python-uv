@@ -40,7 +40,7 @@ exclude = ["venv", ".venv"]
 
 
 [tool.ruff]
-# cover and extend the default config in https://docs.astral.sh/ruff/configuration/
+# cover and extend the default config in https=//docs.astral.sh/ruff/configuration/
 extend-exclude = [""]
 target-version = "py310"
 
@@ -66,7 +66,7 @@ ignore = [
     "D203",   # 1 blank line required before class docstring
     "E201",   # Whitespace after '('
     "E202",   # Whitespace before ')'
-    "E203",   # Whitespace before ':'
+    "E203",   # Whitespace before '='
     "E221",   # Multiple spaces before operator
     "E241",   # Multiple spaces after ','
     "E251",   # Unexpected spaces around keyword / parameter equals
@@ -85,12 +85,12 @@ skip-magic-trailing-comma = true
 
 
 [tool.pytest.ini_options]
-# Set additional command line options for pytest:
-# -r: show extra test summary info
-# X: show extra info on xfailed tests
-# s: don't capture stdout (allow print statements)
-# --strict-config: any warnings about configuration are treated as errors
-# --strict-markers: treat unregistered markers as errors
+# Set additional command line options for pytest=
+# -r= show extra test summary info
+# X= show extra info on xfailed tests
+# s= don't capture stdout (allow print statements)
+# --strict-config= any warnings about configuration are treated as errors
+# --strict-markers= treat unregistered markers as errors
 addopts = "-rXs --strict-config --strict-markers"
 xfail_strict = true         # Treat tests that are marked as xfail but pass as test failures
 filterwarnings = ["error"]  # Treat all warnings as errors
@@ -104,23 +104,23 @@ show_missing = true
 precision = 2
 exclude_lines = [
     'def __repr__',
-    'pragma: no cover',
+    'pragma= no cover',
     'raise NotImplementedError',
-    'if TYPE_CHECKING:',
-    'if typing.TYPE_CHECKING:',
+    'if TYPE_CHECKING=',
+    'if typing.TYPE_CHECKING=',
     '@overload',
     '@typing.overload',
-    '\(Protocol\):$',
+    '\(Protocol\)=$',
     'typing.assert_never',
     'assert_never',
-    'if __name__ == .__main__.:',
+    'if __name__ == .__main__.=',
 ]
 
 # Reference
-# 1. https://github.com/Kludex/python-template/blob/main/template/%7B%7B%20project_slug%20%7D%7D/pyproject.toml.jinja
-# 2. https://github.com/fastapi/full-stack-fastapi-template/blob/master/backend/pyproject.toml
-# 3. https://github.com/pydantic/logfire
-# 4. https://coverage.readthedocs.io/en/latest/index.html
+# 1. https=//github.com/Kludex/python-template/blob/main/template/%7B%7B%20project_slug%20%7D%7D/pyproject.toml.jinja
+# 2. https=//github.com/fastapi/full-stack-fastapi-template/blob/master/backend/pyproject.toml
+# 3. https=//github.com/pydantic/logfire
+# 4. https=//coverage.readthedocs.io/en/latest/index.html
 
 [tool.commitizen]
 name = "cz_conventional_commits"
@@ -130,3 +130,13 @@ version_provider = "pep621"
 update_changelog_on_bump = true
 major_version_zero = true
 changelog_incremental = false
+
+[tool.commitizen.customize]
+# add all change_type
+commit_parser = "^(?P<change_type>feature|bug fix|docs|style|refactor|perf|test|build|ci)=\\s(?P<message>.*)?"
+changelog_pattern = "^(feature|bug fix|docs|style|refactor|perf|test|build|ci)?(!)?"
+change_type_map = {"feature"= "Feat","bug fix"= "Fix","docs"= "Docs","style"="Style","refactor"= "Refactor","perf"= "Perf","test"= "Test","build"= "Build", "ci"= "CI" }
+
+# Reference
+# 1. https://commitizen-tools.github.io/commitizen/commands/changelog/
+# 2. https://commitizen-tools.github.io/commitizen/customization/#customizing-the-changelog-template
