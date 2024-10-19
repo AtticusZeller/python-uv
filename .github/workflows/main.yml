@@ -1,4 +1,4 @@
-name: Test
+name: Test And Release
 
 on:
   push:
@@ -8,16 +8,18 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    name: Run Tests / OS ${{ matrix.os }} / Python ${{ matrix.python-version }}
     strategy:
       matrix:
+        os: [ ubuntu-latest ]
         python-version: ["3.10", "3.11", "3.12"]
+    runs-on: ${{ matrix.os }}
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@main
 
       - name: Install uv
-        uses: astral-sh/setup-uv@v2
+        uses: astral-sh/setup-uv@main
         with:
           enable-cache: true
 
@@ -33,9 +35,31 @@ jobs:
       - name: Run linters
         run: uv run bash scripts/lint.sh
 
+  semantic-release:
+    name: Bump Version and Release
+    needs: test
+    if: ${{ !startsWith(github.event.head_commit.message, 'bump:') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.ATTICUS_PAT }}
 
+      - name: Bump and create changelog
+        uses: commitizen-tools/commitizen-action@master
+        with:
+          github_token: ${{ secrets.ATTICUS_PAT }}
+
+      - name: Release
+        uses: softprops/action-gh-release@master
+        with:
+          tag_name: ${{ env.REVISION }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 
 # Reference
 # 1. https://docs.astral.sh/uv/guides/integration/github/#syncing-and-running
 # 2. https://github.com/Kludex/python-template/blob/main/.github/workflows/main.yml
+# 3. https://commitizen-tools.github.io/commitizen/tutorials/github_actions/
