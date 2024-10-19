@@ -1,0 +1,131 @@
+[project]
+name = "python-uv"
+version = "0.0.1"
+
+description = ""
+authors = [{ name = "Atticus Zhou", email = "zhouge1831@gmail.com" }]
+maintainers = [{ name = "Atticus Zhou", email = "zhouge1831@gmail.com" }]
+requires-python = ">=3.10,<4.0"
+readme = "README.md"
+license = { file = "LICENSE" }
+
+[project.optional-dependencies]
+mkdocs = [
+    "mkdocs-git-revision-date-localized-plugin>=1.2.9",
+    "mkdocs-glightbox>=0.4.0",
+    "mkdocs-material>=9.5.39",
+    "mkdocs-obsidian-bridge>=1.1.1",
+    "mkdocs-publisher>=1.4.2",
+    "pymdown-extensions>=10.11.1",
+]
+
+
+[tool.uv]
+dev-dependencies = [
+    "ruff>=0.6.3",
+    "mypy>=1.11.2",
+    "pre-commit>=3.8.0",
+    "pytest>=8.3.2",
+    "pytest-sugar>=1.0.0",
+    "coverage>=7.6.1",
+    "commitizen>=3.29.1",
+]
+
+
+
+
+[tool.mypy]
+strict = true
+exclude = ["venv", ".venv"]
+
+
+[tool.ruff]
+# cover and extend the default config in https://docs.astral.sh/ruff/configuration/
+extend-exclude = [""]
+target-version = "py310"
+
+[tool.ruff.lint]
+select = [
+    "E",      # pycodestyle errors
+    "W",      # pycodestyle warnings
+    "F",      # pyflakes
+    "I",      # isort
+    "B",      # flake8-bugbear
+    "C4",     # flake8-comprehensions
+    "UP",     # pyupgrade
+    "ARG001", # unused arguments in functions
+]
+ignore = [
+    "E501",   # line too long, handled by black
+    "B008",   # do not perform function calls in argument defaults
+    "W191",   # indentation contains tabs
+    "B904",   # Allow raising exceptions without from e, for HTTPException
+    "COM819", # Trailing comma prohibited
+    "D100",   # Missing docstring in public module(file)
+    "D104",   # Missing docstring in public package
+    "D203",   # 1 blank line required before class docstring
+    "E201",   # Whitespace after '('
+    "E202",   # Whitespace before ')'
+    "E203",   # Whitespace before ':'
+    "E221",   # Multiple spaces before operator
+    "E241",   # Multiple spaces after ','
+    "E251",   # Unexpected spaces around keyword / parameter equals
+    "W291",   # Trailing whitespace
+    "W293",   # Blank line contains whitespace
+]
+
+isort = { combine-as-imports = true,  split-on-trailing-comma = false }
+
+# Avoid trying to fix flake8-bugbear (`B`) violations.
+unfixable = ["B"]
+
+[tool.ruff.format]
+docstring-code-format = true
+skip-magic-trailing-comma = true
+
+
+[tool.pytest.ini_options]
+# Set additional command line options for pytest:
+# -r: show extra test summary info
+# X: show extra info on xfailed tests
+# s: don't capture stdout (allow print statements)
+# --strict-config: any warnings about configuration are treated as errors
+# --strict-markers: treat unregistered markers as errors
+addopts = "-rXs --strict-config --strict-markers"
+xfail_strict = true         # Treat tests that are marked as xfail but pass as test failures
+filterwarnings = ["error"]  # Treat all warnings as errors
+
+[tool.coverage.run]
+branch = true
+
+[tool.coverage.report]
+skip_covered = true
+show_missing = true
+precision = 2
+exclude_lines = [
+    'def __repr__',
+    'pragma: no cover',
+    'raise NotImplementedError',
+    'if TYPE_CHECKING:',
+    'if typing.TYPE_CHECKING:',
+    '@overload',
+    '@typing.overload',
+    '\(Protocol\):$',
+    'typing.assert_never',
+    'assert_never',
+    'if __name__ == .__main__.:',
+]
+
+# Reference
+# 1. https://github.com/Kludex/python-template/blob/main/template/%7B%7B%20project_slug%20%7D%7D/pyproject.toml.jinja
+# 2. https://github.com/fastapi/full-stack-fastapi-template/blob/master/backend/pyproject.toml
+# 3. https://github.com/pydantic/logfire
+# 4. https://coverage.readthedocs.io/en/latest/index.html
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version_scheme = "semver"
+version_provider = "pep621"
+update_changelog_on_bump = true
+major_version_zero = true

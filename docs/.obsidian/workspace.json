@@ -1,0 +1,245 @@
+{
+  "main": {
+    "id": "f9508c72efec9470",
+    "type": "split",
+    "children": [
+      {
+        "id": "0e7b1205a583b429",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0cb70fb2c9b28a6e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CS/Language/python/Venv/UV.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1cf8a6c5889338d6",
+    "type": "split",
+    "children": [
+      {
+        "id": "986c2766e027ae11",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e5fb1abf4287bce9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3af94c3f442307d5",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          },
+          {
+            "id": "1d2a417b4d4421b7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 246.5
+  },
+  "right": {
+    "id": "47a7fb051f9573eb",
+    "type": "split",
+    "children": [
+      {
+        "id": "1be3b56d45aba669",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cbb2b0927a9a2b61",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "CS/Language/python/Venv/UV.md",
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "dbce23fdc71b5bd7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "CS/Language/python/Venv/UV.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5d12bf5c232f51b8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "b12cdacea1391417",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          },
+          {
+            "id": "fe33bc386c72aa8e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "CS/Language/python/Venv/UV.md"
+              }
+            }
+          },
+          {
+            "id": "6c7a22ce9a44906b",
+            "type": "leaf",
+            "state": {
+              "type": "code-execute-manage-executors",
+              "state": {}
+            }
+          },
+          {
+            "id": "b02e2e30d05790c3",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "79aef470e1fbe4d9",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 274.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "publish:Publish changes...": false,
+      "random-note:Open random note": false,
+      "workspaces:Manage workspace layouts": false,
+      "switcher:Open quick switcher": false,
+      "omnisearch:Omnisearch": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "oz-clear-unused-images:Clear Unused Images": false
+    }
+  },
+  "active": "0cb70fb2c9b28a6e",
+  "lastOpenFiles": [
+    "CS/Language/python/Ruff.md",
+    "CS/Frontend/React/Next.js.md",
+    "CS/Frontend/React",
+    "CS/Frontend",
+    "CS/Language/python/Venv/UV.md",
+    "CS/OS/Ubuntu/wsl.md",
+    "CS/OS/Ubuntu/system.md",
+    "CS/OS/Ubuntu/shell.md",
+    "Features/Image.md",
+    "assets/Pasted image 20240922181517.png",
+    "Learning/Reading list.md",
+    "CS/VCS/Pre-commit.md",
+    "CS/Backend/DB/PostgreSQL.md",
+    "index.md",
+    "Paper/journals/IET/ITE computer vision.md",
+    "Paper/journals/IET/Cover question.md",
+    "CS/tools/IDE/JetBrains.md",
+    "CS/tools/IDE/plugin.md",
+    "CS/Language/python/Venv/conda.md",
+    "CS/Backend/DB/ORM/SQLModel.md",
+    "CS/Language/python/Std/Pathlib.md",
+    "CS/Backend/DB/ORM",
+    "Learning/CS/Language/python/third_party_lib/pyqt6.md",
+    "CS/Language/python/Venv/Poetry.md",
+    "CS/Language/python/Venv/Pip.md",
+    "CS/Language/js_ts/npm_yarn.md",
+    "CS/Language/js_ts/vue.js/nuxt.js.md",
+    "CS/Backend/DB/Sqlite.md",
+    "CS/Backend/DB",
+    "assets/png_flowchart.png",
+    "assets/png_N_background.png",
+    "assets/inverted_image.png",
+    "assets/Pasted image 20240921191130.png",
+    "assets/Pasted image 20240921191125.png",
+    "assets/Pasted image 20240921191115.png",
+    "assets/Flowcharts (2).svg",
+    "assets/Pasted image 20240921184838.png",
+    "assets/drawio/pipeline",
+    "assets/Pasted image 20240920184027.png",
+    "Paper/journals/IET/iet-computer-vision.csl",
+    "Paper/journals/IET/Submission.md",
+    "Paper/journals/IET/Main.md",
+    "Paper/journals/IET/IET+Computer+Vision+Submission+Questions.docx",
+    "Paper/journals/IET",
+    "Paper/journals",
+    "Paper",
+    "Untitled.canvas",
+    "未命名.canvas",
+    "未命名 3.canvas",
+    "未命名 2.canvas",
+    "未命名 1.canvas"
+  ]
+}
