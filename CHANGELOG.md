@@ -1,3 +1,12 @@
+## 0.0.5 (2024-10-20)
+
+### Fix
+
+- pyproject.toml
+- **pyproject.toml**: change_type_map
+- **pyproject.toml**: add all change_type to changelog_pattern
+- **pyproject.toml**: test fix
+
 ## 0.0.4 (2024-10-19)
 
 ### Fix
