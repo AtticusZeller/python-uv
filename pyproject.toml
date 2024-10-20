@@ -132,7 +132,8 @@ major_version_zero = true
 changelog_incremental = false
 
 [tool.commitizen.customize]
-commit_parser = "^(?P<change_type>feature|bug fix|docs|style|refactor|perf|test|build|ci):\\s(?P<message>.*)?"
+commit_parser = "^(?P<change_type>feature|bug fix|docs|style|refactor|perf|test|build|ci):\\s(?P<message>.*)$"
+
 changelog_pattern = "^(feature|bug fix|docs|style|refactor|perf|test|build|ci)?(!)?"
 
 [tool.commitizen.customize.change_type_map]
