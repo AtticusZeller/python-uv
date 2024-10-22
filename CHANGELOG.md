@@ -1,3 +1,9 @@
+## 0.0.6 (2024-10-22)
+
+### Fix
+
+- **main.ci**: failed to get tag to release
+
 ## 0.0.5 (2024-10-20)
 
 ### Fix
