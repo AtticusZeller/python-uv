@@ -121,7 +121,6 @@ exclude_lines = [
 # 2. https=//github.com/fastapi/full-stack-fastapi-template/blob/master/backend/pyproject.toml
 # 3. https=//github.com/pydantic/logfire
 # 4. https=//coverage.readthedocs.io/en/latest/index.html
-
 [tool.commitizen]
 name = "cz_conventional_commits"
 tag_format = "$version"
@@ -131,21 +130,6 @@ update_changelog_on_bump = true
 major_version_zero = true
 changelog_incremental = false
 
-[tool.commitizen.customize]
-commit_parser = "^(?P<change_type>feature|bug fix|docs|style|refactor|perf|test|build|ci):\\s(?P<message>.*)$"
-
-changelog_pattern = "^(feature|bug fix|docs|style|refactor|perf|test|build|ci)?(!)?"
-
-[tool.commitizen.customize.change_type_map]
-feature = "Feat"
-"bug fix" = "Fix"
-docs = "Docs"
-style = "Style"
-refactor = "Refactor"
-perf = "Perf"
-test = "Test"
-build = "Build"
-ci = "CI"
 
 # Reference
 # 1. https://commitizen-tools.github.io/commitizen/commands/changelog/
