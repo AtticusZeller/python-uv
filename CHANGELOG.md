@@ -1,3 +1,9 @@
+## 0.0.7 (2024-10-22)
+
+### Fix
+
+- **main.yml**: release condition is the commit message with bump:
+
 ## 0.0.6 (2024-10-22)
 
 ### Fix
