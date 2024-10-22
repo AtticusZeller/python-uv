@@ -46,12 +46,14 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.ATTICUS_PAT }}
 
-
+      - name: Get latest tag
+        id: get_latest_tag
+        run: echo "LATEST_TAG=$(git describe --tags --abbrev=0)" >> $GITHUB_OUTPUT
 
       - name: Release
         uses: softprops/action-gh-release@master
         with:
-          tag_name: ${{ env.REVISION }}
+          tag_name: ${{ steps.get_latest_tag.outputs.LATEST_TAG }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
