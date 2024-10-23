@@ -133,9 +133,9 @@ changelog_incremental = false
 
 
 [tool.commitizen.customize]
-commit_parser = "^((?P<change_type>feat|fix|refactor|perf|cocs|style|refactor|BREAKING CHANGE)(?:\\((?P<scope>[^()\r\n]*)\\)|\\()?(?P<breaking>!)?|\\w+!):\\s(?P<message>.*)?"
+commit_parser = "^((?P<change_type>feat|fix|refactor|perf|docs|style|refactor|BREAKING CHANGE)(?:\\((?P<scope>[^()\r\n]*)\\)|\\()?(?P<breaking>!)?|\\w+!):\\s(?P<message>.*)?"
 changelog_pattern = "^((BREAKING[\\-\\ ]CHANGE|\\w+)(\\(.+\\))?!?):"
-change_type_map = {"feat"="Feat","fix"="Fix","refactor"= "Refactor","perf"="Perf"}
+change_type_map = {"feat"="Feat","fix"="Fix","refactor"= "Refactor","perf"="Perf","docs"="Docs","style"="Style"}
 
 
 # Reference
