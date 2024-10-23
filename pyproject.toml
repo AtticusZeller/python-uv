@@ -131,6 +131,12 @@ major_version_zero = true
 changelog_incremental = false
 
 
+
+[tool.commitizen.customize]
+commit_parser = "^((?P<change_type>feat|fix|refactor|perf|BREAKING CHANGE)(?:\\((?P<scope>[^()\r\n]*)\\)|\\()?(?P<breaking>!)?|\\w+!):\\s(?P<message>.*)?"
+changelog_pattern = "^((BREAKING[\\-\\ ]CHANGE|\\w+)(\\(.+\\))?!?):"
+change_type_map = {"feat"="Feat","fix"="Fix","refactor"= "Refactor","perf"="Perf"}
+
 # Reference
 # 1. https://commitizen-tools.github.io/commitizen/commands/changelog/
 # 2. https://commitizen-tools.github.io/commitizen/customization/#customizing-the-changelog-template
