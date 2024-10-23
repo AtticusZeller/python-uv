@@ -1,3 +1,9 @@
+## 0.0.8 (2024-10-23)
+
+### Fix
+
+- **.vscode**: enable python package import plugin
+
 ## 0.0.7 (2024-10-22)
 
 ### Fix
