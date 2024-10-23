@@ -1,3 +1,18 @@
+## 0.0.9 (2024-10-23)
+
+### Fix
+
+- **pyproject.toml**: add local dev commitizen
+- **pyproject.toml**: bug show
+
+### Perf
+
+- test pre
+
+### Docs
+
+- test  docs
+
 ## 0.0.8 (2024-10-23)
 
 ### Fix
