@@ -1,0 +1,386 @@
+[
+    {
+        "label": "runpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "runpy",
+        "description": "runpy",
+        "detail": "runpy",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Generator",
+        "importPath": "collections.abc",
+        "description": "collections.abc",
+        "isExtraImport": true,
+        "detail": "collections.abc",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "pytest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytest",
+        "description": "pytest",
+        "detail": "pytest",
+        "documentation": {}
+    },
+    {
+        "label": "Animal",
+        "importPath": "src.advanced",
+        "description": "src.advanced",
+        "isExtraImport": true,
+        "detail": "src.advanced",
+        "documentation": {}
+    },
+    {
+        "label": "Dog",
+        "importPath": "src.advanced",
+        "description": "src.advanced",
+        "isExtraImport": true,
+        "detail": "src.advanced",
+        "documentation": {}
+    },
+    {
+        "label": "fibonacci",
+        "importPath": "src.advanced",
+        "description": "src.advanced",
+        "isExtraImport": true,
+        "detail": "src.advanced",
+        "documentation": {}
+    },
+    {
+        "label": "use_context_manager",
+        "importPath": "src.advanced",
+        "description": "src.advanced",
+        "isExtraImport": true,
+        "detail": "src.advanced",
+        "documentation": {}
+    },
+    {
+        "label": "dict_operations",
+        "importPath": "src.data",
+        "description": "src.data",
+        "isExtraImport": true,
+        "detail": "src.data",
+        "documentation": {}
+    },
+    {
+        "label": "list_operations",
+        "importPath": "src.data",
+        "description": "src.data",
+        "isExtraImport": true,
+        "detail": "src.data",
+        "documentation": {}
+    },
+    {
+        "label": "tuple_operations",
+        "importPath": "src.data",
+        "description": "src.data",
+        "isExtraImport": true,
+        "detail": "src.data",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_sum",
+        "importPath": "src.main",
+        "description": "src.main",
+        "isExtraImport": true,
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "greet",
+        "importPath": "src.main",
+        "description": "src.main",
+        "isExtraImport": true,
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"app\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.12/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"app\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.12/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"app\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.12/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"app\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.12/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"app\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.12/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"../lib/python3.12/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "Animal",
+        "kind": 6,
+        "importPath": "src.advanced",
+        "description": "src.advanced",
+        "peekOfCode": "class Animal:\n    def __init__(self, name: str):\n        self.name = name\n    def speak(self) -> str:\n        raise NotImplementedError(\"Subclass must implement abstract method\")\nclass Dog(Animal):\n    def speak(self) -> str:\n        return f\"{self.name} says Woof!\"\ndef use_context_manager(filename: str) -> str:\n    with open(filename) as file:",
+        "detail": "src.advanced",
+        "documentation": {}
+    },
+    {
+        "label": "Dog",
+        "kind": 6,
+        "importPath": "src.advanced",
+        "description": "src.advanced",
+        "peekOfCode": "class Dog(Animal):\n    def speak(self) -> str:\n        return f\"{self.name} says Woof!\"\ndef use_context_manager(filename: str) -> str:\n    with open(filename) as file:\n        return file.read()",
+        "detail": "src.advanced",
+        "documentation": {}
+    },
+    {
+        "label": "fibonacci",
+        "kind": 2,
+        "importPath": "src.advanced",
+        "description": "src.advanced",
+        "peekOfCode": "def fibonacci(n: int) -> Generator[int, None, None]:\n    a, b = 0, 1\n    for _ in range(n):\n        yield a\n        a, b = b, a + b\nclass Animal:\n    def __init__(self, name: str):\n        self.name = name\n    def speak(self) -> str:\n        raise NotImplementedError(\"Subclass must implement abstract method\")",
+        "detail": "src.advanced",
+        "documentation": {}
+    },
+    {
+        "label": "use_context_manager",
+        "kind": 2,
+        "importPath": "src.advanced",
+        "description": "src.advanced",
+        "peekOfCode": "def use_context_manager(filename: str) -> str:\n    with open(filename) as file:\n        return file.read()",
+        "detail": "src.advanced",
+        "documentation": {}
+    },
+    {
+        "label": "list_operations",
+        "kind": 2,
+        "importPath": "src.data",
+        "description": "src.data",
+        "peekOfCode": "def list_operations() -> list[int]:\n    numbers = [1, 2, 3, 4, 5]\n    numbers.append(6)\n    numbers.extend([7, 8])\n    return numbers\ndef dict_operations() -> dict[str, int]:\n    fruits = {\"apple\": 1, \"banana\": 2, \"orange\": 3}\n    fruits[\"grape\"] = 4\n    return fruits\ndef tuple_operations() -> tuple[int, str, bool]:",
+        "detail": "src.data",
+        "documentation": {}
+    },
+    {
+        "label": "dict_operations",
+        "kind": 2,
+        "importPath": "src.data",
+        "description": "src.data",
+        "peekOfCode": "def dict_operations() -> dict[str, int]:\n    fruits = {\"apple\": 1, \"banana\": 2, \"orange\": 3}\n    fruits[\"grape\"] = 4\n    return fruits\ndef tuple_operations() -> tuple[int, str, bool]:\n    return (1, \"hello\", True)",
+        "detail": "src.data",
+        "documentation": {}
+    },
+    {
+        "label": "tuple_operations",
+        "kind": 2,
+        "importPath": "src.data",
+        "description": "src.data",
+        "peekOfCode": "def tuple_operations() -> tuple[int, str, bool]:\n    return (1, \"hello\", True)",
+        "detail": "src.data",
+        "documentation": {}
+    },
+    {
+        "label": "greet",
+        "kind": 2,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "def greet(name: str) -> str:\n    return f\"Hello, {name}!\"\ndef calculate_sum(*args: int) -> int:\n    return sum(args)\nif __name__ == \"__main__\":\n    print(greet(\"World\"))\n    print(f\"Sum: {calculate_sum(1, 2, 3, 4, 5)}\")",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_sum",
+        "kind": 2,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "def calculate_sum(*args: int) -> int:\n    return sum(args)\nif __name__ == \"__main__\":\n    print(greet(\"World\"))\n    print(f\"Sum: {calculate_sum(1, 2, 3, 4, 5)}\")",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "test_fibonacci",
+        "kind": 2,
+        "importPath": "tests.test_advanced",
+        "description": "tests.test_advanced",
+        "peekOfCode": "def test_fibonacci() -> None:\n    fib = list(fibonacci(5))\n    assert fib == [0, 1, 1, 2, 3]\ndef test_animal() -> None:\n    with pytest.raises(NotImplementedError):\n        Animal(\"Generic\").speak()\ndef test_dog() -> None:\n    dog = Dog(\"Buddy\")\n    assert dog.speak() == \"Buddy says Woof!\"\ndef test_context_manager(tmp_path: Path) -> None:",
+        "detail": "tests.test_advanced",
+        "documentation": {}
+    },
+    {
+        "label": "test_animal",
+        "kind": 2,
+        "importPath": "tests.test_advanced",
+        "description": "tests.test_advanced",
+        "peekOfCode": "def test_animal() -> None:\n    with pytest.raises(NotImplementedError):\n        Animal(\"Generic\").speak()\ndef test_dog() -> None:\n    dog = Dog(\"Buddy\")\n    assert dog.speak() == \"Buddy says Woof!\"\ndef test_context_manager(tmp_path: Path) -> None:\n    test_file = tmp_path / \"test.txt\"\n    test_file.write_text(\"Hello, World!\")\n    assert use_context_manager(str(test_file)) == \"Hello, World!\"",
+        "detail": "tests.test_advanced",
+        "documentation": {}
+    },
+    {
+        "label": "test_dog",
+        "kind": 2,
+        "importPath": "tests.test_advanced",
+        "description": "tests.test_advanced",
+        "peekOfCode": "def test_dog() -> None:\n    dog = Dog(\"Buddy\")\n    assert dog.speak() == \"Buddy says Woof!\"\ndef test_context_manager(tmp_path: Path) -> None:\n    test_file = tmp_path / \"test.txt\"\n    test_file.write_text(\"Hello, World!\")\n    assert use_context_manager(str(test_file)) == \"Hello, World!\"",
+        "detail": "tests.test_advanced",
+        "documentation": {}
+    },
+    {
+        "label": "test_context_manager",
+        "kind": 2,
+        "importPath": "tests.test_advanced",
+        "description": "tests.test_advanced",
+        "peekOfCode": "def test_context_manager(tmp_path: Path) -> None:\n    test_file = tmp_path / \"test.txt\"\n    test_file.write_text(\"Hello, World!\")\n    assert use_context_manager(str(test_file)) == \"Hello, World!\"",
+        "detail": "tests.test_advanced",
+        "documentation": {}
+    },
+    {
+        "label": "test_list_operations",
+        "kind": 2,
+        "importPath": "tests.test_data",
+        "description": "tests.test_data",
+        "peekOfCode": "def test_list_operations() -> None:\n    result = list_operations()\n    assert len(result) == 8\n    assert result[-1] == 8\ndef test_dict_operations() -> None:\n    result = dict_operations()\n    assert len(result) == 4\n    assert result[\"grape\"] == 4\ndef test_tuple_operations() -> None:\n    result = tuple_operations()",
+        "detail": "tests.test_data",
+        "documentation": {}
+    },
+    {
+        "label": "test_dict_operations",
+        "kind": 2,
+        "importPath": "tests.test_data",
+        "description": "tests.test_data",
+        "peekOfCode": "def test_dict_operations() -> None:\n    result = dict_operations()\n    assert len(result) == 4\n    assert result[\"grape\"] == 4\ndef test_tuple_operations() -> None:\n    result = tuple_operations()\n    assert len(result) == 3\n    assert isinstance(result[1], str)",
+        "detail": "tests.test_data",
+        "documentation": {}
+    },
+    {
+        "label": "test_tuple_operations",
+        "kind": 2,
+        "importPath": "tests.test_data",
+        "description": "tests.test_data",
+        "peekOfCode": "def test_tuple_operations() -> None:\n    result = tuple_operations()\n    assert len(result) == 3\n    assert isinstance(result[1], str)",
+        "detail": "tests.test_data",
+        "documentation": {}
+    },
+    {
+        "label": "test_greet",
+        "kind": 2,
+        "importPath": "tests.test_main",
+        "description": "tests.test_main",
+        "peekOfCode": "def test_greet() -> None:\n    assert greet(\"Alice\") == \"Hello, Alice!\"\ndef test_calculate_sum() -> None:\n    assert calculate_sum(1, 2, 3) == 6\n    assert calculate_sum() == 0\n    assert calculate_sum(10) == 10",
+        "detail": "tests.test_main",
+        "documentation": {}
+    },
+    {
+        "label": "test_calculate_sum",
+        "kind": 2,
+        "importPath": "tests.test_main",
+        "description": "tests.test_main",
+        "peekOfCode": "def test_calculate_sum() -> None:\n    assert calculate_sum(1, 2, 3) == 6\n    assert calculate_sum() == 0\n    assert calculate_sum(10) == 10",
+        "detail": "tests.test_main",
+        "documentation": {}
+    }
+]
