@@ -31,6 +31,9 @@ dev-dependencies = [
     "commitizen>=3.29.1",
 ]
 
+[tool.uv.sources]
+commitizen = { path = "../commitizen", editable = true }
+
 
 
 
@@ -122,7 +125,7 @@ exclude_lines = [
 # 3. https=//github.com/pydantic/logfire
 # 4. https=//coverage.readthedocs.io/en/latest/index.html
 [tool.commitizen]
-name = "cz_conventional_commits"
+name = "cz_customize"
 tag_format = "$version"
 version_scheme = "semver"
 version_provider = "pep621"
@@ -133,9 +136,9 @@ changelog_incremental = false
 
 
 [tool.commitizen.customize]
-commit_parser = "^((?P<change_type>feat|fix|refactor|perf|docs|style|refactor|BREAKING CHANGE)(?:\\((?P<scope>[^()\r\n]*)\\)|\\()?(?P<breaking>!)?|\\w+!):\\s(?P<message>.*)?"
+commit_parser = "^((?P<change_type>feat|fix|refactor|perf|docs|style|refactor|ci|BREAKING CHANGE)(?:\\((?P<scope>[^()\r\n]*)\\)|\\()?(?P<breaking>!)?|\\w+!):\\s(?P<message>.*)?"
 changelog_pattern = "^((BREAKING[\\-\\ ]CHANGE|\\w+)(\\(.+\\))?!?):"
-change_type_map = {"feat"="Feat","fix"="Fix","refactor"= "Refactor","perf"="Perf","docs"="Docs","style"="Style"}
+change_type_map = {"feat"="Feat","fix"="Fix","refactor"= "Refactor","perf"="Perf","docs"="Docs","style"="Style","ci"="CI"}
 
 
 # Reference

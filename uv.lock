@@ -142,7 +142,7 @@ wheels = [
 [[package]]
 name = "commitizen"
 version = "3.29.1"
-source = { registry = "https://pypi.org/simple" }
+source = { editable = "../commitizen" }
 dependencies = [
     { name = "argcomplete" },
     { name = "charset-normalizer" },
@@ -155,9 +155,21 @@ dependencies = [
     { name = "termcolor" },
     { name = "tomlkit" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/1a/b9/4cedde0d2ce28a56dd8f83b138235e2234ded942a7f7c7fed85bf703bf59/commitizen-3.29.1.tar.gz", hash = "sha256:b9a56190f4f3b20c73600e5ba448c7b81e0e6f87be3092aec1db4de75bf0fa91", size = 50711 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/1a/95/7b55adb50de70dac4ad1ebcf4149ad3384c027d4c17fb9804c28a470ee82/commitizen-3.29.1-py3-none-any.whl", hash = "sha256:83f6563fae6a6262238e4424c55db5743eaa9827d2044dc23719466e4e78a0ca", size = 71761 },
+
+[package.metadata]
+requires-dist = [
+    { name = "argcomplete", specifier = ">=1.12.1,<3.6" },
+    { name = "charset-normalizer", specifier = ">=2.1.0,<4" },
+    { name = "colorama", specifier = ">=0.4.1,<0.5.0" },
+    { name = "decli", specifier = ">=0.6.0,<0.7.0" },
+    { name = "importlib-metadata", marker = "python_full_version < '3.10'", specifier = ">=8.0.0,<9" },
+    { name = "jinja2", specifier = ">=2.10.3" },
+    { name = "packaging", specifier = ">=19" },
+    { name = "pyyaml", specifier = ">=3.8" },
+    { name = "questionary", specifier = ">=2.0,<3.0" },
+    { name = "termcolor", specifier = ">=1.1,<3" },
+    { name = "tomlkit", specifier = ">=0.5.3,<1.0.0" },
+    { name = "typing-extensions", marker = "python_full_version < '3.8'", specifier = ">=4.0.1,<5.0.0" },
 ]
 
 [[package]]
@@ -732,7 +744,7 @@ wheels = [
 
 [[package]]
 name = "python-uv"
-version = "0.0.4"
+version = "0.0.8"
 source = { virtual = "." }
 
 [package.optional-dependencies]
@@ -768,7 +780,7 @@ requires-dist = [
 
 [package.metadata.requires-dev]
 dev = [
-    { name = "commitizen" },
+    { name = "commitizen", editable = "../commitizen" },
     { name = "coverage", specifier = ">=7.6.1" },
     { name = "mypy", specifier = ">=1.11.2" },
     { name = "pre-commit", specifier = ">=3.8.0" },
