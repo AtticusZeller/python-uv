@@ -1,6 +1,11 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+## [unreleased]
+
+### ⚙️ Miscellaneous Tasks
+
+- Add git-cliff
+- Run pre-commit
 
 ## [0.0.9] - 2024-10-23
 
