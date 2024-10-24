@@ -103,9 +103,18 @@ skip_covered = true
 ```
 todo：codecov ci and replace coverage with it
 
-### commitzen
+### git-cliff
 
-   - [x] basic use
-   - [ ] instruction for docs
+We follow a specific format for commit messages to maintain a clear and organized project history.
+with `git-cliff` default confg
 
+- `feat:` New features or enhancements
+- `fix:` Bug fixes
+- `doc:` Documentation updates
+- `perf:` Performance improvements
+- `refactor:` Code refactoring without adding features or fixing bugs
+- `style:` Code style changes (formatting, missing semi-colons, etc.)
+- `test:` Adding or modifying tests
+- `chore:` Routine tasks, maintenance, or tooling changes
+- `revert:` Reverting a previous commit
 ### copier
