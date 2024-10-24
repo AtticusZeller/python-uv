@@ -38,7 +38,7 @@ jobs:
   semantic-release:
     name: Bump Version and Release
     needs: test
-    if: ${{ startsWith(github.event.head_commit.message, 'bump:') }}
+    if: ${{ startsWith(github.event.head_commit.message, 'bump') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
