@@ -5,11 +5,21 @@
 ### 🐛 Bug Fixes
 
 - *(vcs)* Remove changelog header
+- *(CI)* Release-note is not total CHANGELOG.md
+- *(CI)* Release only with tags branches
 
 ### ⚙️ Miscellaneous Tasks
 
 - Add git-cliff
 - Run pre-commit
+- *(dep)* Update changelog
+- Update pyproject.toml
+- *(CI)* Remove release condition
+
+### Bump
+
+- *(CI)* Fix release body path file
+- Fix ci if release conditions
 
 ## [0.0.9] - 2024-10-23
 
