@@ -3,8 +3,8 @@ name = "python-uv"
 version = "0.0.9"
 
 description = ""
-authors = [{ name = "Atticus Zhou", email = "zhouge1831@gmail.com" }]
-maintainers = [{ name = "Atticus Zhou", email = "zhouge1831@gmail.com" }]
+authors = [{ name = "A.J.Zeller", email = "zhouge1831@gmail.com" }]
+maintainers = [{ name = "A.J.Zeller", email = "zhouge1831@gmail.com" }]
 requires-python = ">=3.10,<4.0"
 readme = "README.md"
 license = { file = "LICENSE" }
