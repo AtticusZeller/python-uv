@@ -3,6 +3,8 @@ name: Test And Release
 on:
   push:
     branches: [ main ]
+    tags:
+      - "v*.*.*"
   pull_request:
     branches: [ main ]
 
@@ -12,7 +14,7 @@ jobs:
     strategy:
       matrix:
         os: [ ubuntu-latest ]
-        python-version: ["3.10", "3.11", "3.12"]
+        python-version: ["3.10", "3.11", "3.12","3.13"]
     runs-on: ${{ matrix.os }}
 
     steps:
@@ -46,32 +48,19 @@ jobs:
           token: ${{ secrets.ATTICUS_PAT }}
 
       - name: Generate a changelog
-        uses: orhun/git-cliff-action@v3
+        uses: orhun/git-cliff-action@main
+        id: git-cliff
         with:
           config: pyproject.toml
-          args: --verbose
+          args: --verbose --latest
         env:
           OUTPUT: CHANGELOG.md
           GITHUB_REPO: ${{ github.repository }}
 
-      - name: Get latest tag
-        id: get_latest_tag
-        run: echo "LATEST_TAG=$(git describe --tags --abbrev=0)" >> $GITHUB_OUTPUT
-
-      - name: Extract latest changes
-        id: extract_changes
-        run: |
-          VERSION=$(echo "${{ steps.get_latest_tag.outputs.LATEST_TAG }}" | sed 's/^v//')
-          sed -n "/## $$VERSION$/,/## \[/p" CHANGELOG.md | sed '$d' > latest_changes.md
-          echo "CHANGES<<EOF" >> $GITHUB_OUTPUT
-          cat latest_changes.md >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
-
       - name: Release
         uses: softprops/action-gh-release@master
         with:
-          tag_name: ${{ steps.get_latest_tag.outputs.LATEST_TAG }}
-          body: ${{ steps.extract_changes.outputs.CHANGES }}
+          body:  ${{ steps.git-cliff.outputs.changelog }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
