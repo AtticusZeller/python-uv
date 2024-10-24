@@ -1,6 +1,10 @@
 # Changelog
 
-## [unreleased]
+## [0.0.10] - 2024-10-24
+
+### 🐛 Bug Fixes
+
+- *(vcs)* Remove changelog header
 
 ### ⚙️ Miscellaneous Tasks
 
