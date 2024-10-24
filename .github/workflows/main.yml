@@ -46,20 +46,40 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.ATTICUS_PAT }}
 
+      - name: Generate a changelog
+        uses: orhun/git-cliff-action@v3
+        with:
+          config: pyproject.toml
+          args: --verbose
+        env:
+          OUTPUT: CHANGELOG.md
+          GITHUB_REPO: ${{ github.repository }}
+
       - name: Get latest tag
         id: get_latest_tag
         run: echo "LATEST_TAG=$(git describe --tags --abbrev=0)" >> $GITHUB_OUTPUT
+
+      - name: Extract latest changes
+        id: extract_changes
+        run: |
+          VERSION=$(echo "${{ steps.get_latest_tag.outputs.LATEST_TAG }}" | sed 's/^v//')
+          sed -n "/## $$VERSION$/,/## \[/p" CHANGELOG.md | sed '$d' > latest_changes.md
+          echo "CHANGES<<EOF" >> $GITHUB_OUTPUT
+          cat latest_changes.md >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Release
         uses: softprops/action-gh-release@master
         with:
           tag_name: ${{ steps.get_latest_tag.outputs.LATEST_TAG }}
-          body_path: CHANGELOG.md
+          body: ${{ steps.extract_changes.outputs.CHANGES }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 
 
 # Reference
 # 1. https://docs.astral.sh/uv/guides/integration/github/#syncing-and-running
 # 2. https://github.com/Kludex/python-template/blob/main/.github/workflows/main.yml
 # 3. https://commitizen-tools.github.io/commitizen/tutorials/github_actions/
+# 4. https://git-cliff.org/docs/github-actions/git-cliff-action
