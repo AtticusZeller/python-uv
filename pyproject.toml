@@ -1,6 +1,6 @@
 [project]
 name = "python-uv"
-version = "0.0.18"
+version = "0.0.19"
 
 description = ""
 authors = [{ name = "A.J.Zeller", email = "zhouge1831@gmail.com" }]
@@ -204,7 +204,7 @@ initial_tag = "0.0.1"
 bump_type = "patch"
 
 [tool.bumpversion]
-current_version = "0.0.18"
+current_version = "0.0.19"
 parse = "(?P<major>\\d+)\\.(?P<minor>\\d+)\\.(?P<patch>\\d+)"
 serialize = ["{major}.{minor}.{patch}"]
 search = "{current_version}"
@@ -216,7 +216,7 @@ tag = true
 sign_tags = false
 tag_name = "v{new_version}"
 tag_message = "Bump version: {current_version} → {new_version}"
-allow_dirty = false
+allow_dirty = true
 commit = true
 message = "Bump version: {current_version} → {new_version}"
 commit_args = ""
@@ -226,8 +226,8 @@ post_commit_hooks = []
 
 [[tool.bumpversion.files]]
 filename = "pyproject.toml"
-search = "version = '{current_version}'"
-replace = "version = '{new_version}'"
+search = 'version = "{current_version}"'
+replace = 'version = "{new_version}"'
 
 [[tool.bumpversion.files]]
 filename = "CHANGELOG.md"

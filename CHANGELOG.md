@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.0.19] - 2024-10-25
+
+### 🐛 Bug Fixes
+
+- Pyproject.toml
+
 ## [0.0.18] - 2024-10-25
 
 ### 🐛 Bug Fixes
