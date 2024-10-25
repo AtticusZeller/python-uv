@@ -1,6 +1,6 @@
 [project]
 name = "python-uv"
-version = "0.0.9"
+version = "0.0.15"
 
 description = ""
 authors = [{ name = "A.J.Zeller", email = "zhouge1831@gmail.com" }]
@@ -226,12 +226,6 @@ post_commit_hooks = []
 
 [[tool.bumpversion.files]]
 filename = "pyproject.toml"
-search = '''
-name = "python-uv"
-version = "{current_version}"
-'''
-replace = '''
-name = "python-uv"
-version = "{new_version}"
-'''
+search = 'version = "{current_version}"'
+replace = 'version = "{new_version}"'
 # https://callowayproject.github.io/bump-my-version/reference/search-and-replace-config/
