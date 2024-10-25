@@ -232,6 +232,6 @@ replace = "version = '{new_version}'"
 [[tool.bumpversion.files]]
 filename = "CHANGELOG.md"
 search = "[unreleased]"
-replace = "'{new_version}' - '{now:%Y-%m-%d}'"
+replace = "[{new_version}] - {now:%Y-%m-%d}"
 
 # https://callowayproject.github.io/bump-my-version/reference/search-and-replace-config/
