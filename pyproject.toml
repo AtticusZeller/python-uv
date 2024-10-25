@@ -29,6 +29,7 @@ dev-dependencies = [
     "pytest-sugar>=1.0.0",
     "coverage>=7.6.1",
     "git-cliff>=2.6.1",
+    "bump-my-version>=0.28.0",
 ]
 
 
@@ -201,3 +202,24 @@ features_always_bump_minor = true
 breaking_always_bump_major = true
 initial_tag = "0.0.1"
 bump_type = "patch"
+
+[tool.bumpversion]
+current_version = "0.0.10"
+parse = "(?P<major>\\d+)\\.(?P<minor>\\d+)\\.(?P<patch>\\d+)"
+serialize = ["{major}.{minor}.{patch}"]
+search = "{current_version}"
+replace = "{new_version}"
+regex = false
+ignore_missing_version = false
+ignore_missing_files = false
+tag = true
+sign_tags = false
+tag_name = "v{new_version}"
+tag_message = "Bump version: {current_version} → {new_version}"
+allow_dirty = false
+commit = true
+message = "Bump version: {current_version} → {new_version}"
+commit_args = ""
+setup_hooks = []
+pre_commit_hooks = []
+post_commit_hooks = []
