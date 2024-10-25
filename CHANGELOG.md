@@ -1,146 +1,88 @@
 # Changelog
 
-## [0.0.10] - 2024-10-24
+All notable changes to this project will be documented in this file.
 
-### 🐛 Bug Fixes
+The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
+and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-- *(vcs)* Remove changelog header
-- *(CI)* Release-note is not total CHANGELOG.md
-- *(CI)* Release only with tags branches
+<!-- insertion marker -->
+## [0.0.10](https://github.com/Atticuszz/python-uv/releases/tag/0.0.10) - 2024-10-25
 
-### ⚙️ Miscellaneous Tasks
+<small>[Compare with 0.0.9](https://github.com/Atticuszz/python-uv/compare/0.0.9...0.0.10)</small>
 
-- Add git-cliff
-- Run pre-commit
-- *(dep)* Update changelog
-- Update pyproject.toml
-- *(CI)* Remove release condition
+### Fixed
 
-### Bump
+- fix(CI): release on tags branches ([8d03ce8](https://github.com/Atticuszz/python-uv/commit/8d03ce84032f4fb4010869b4d3f3d69aa62b41d3) by Atticuszz).
+- fix(CI): release only with tags branches ([43b9fde](https://github.com/Atticuszz/python-uv/commit/43b9fde160917e066b27c65b2757591b952a5d34) by Atticuszz).
+- fix(CI): release-note is not total CHANGELOG.md ([2070e74](https://github.com/Atticuszz/python-uv/commit/2070e74d74a8cd11cbea4d3508348ea32779c8bb) by Atticuszz).
+- fix(vcs): remove changelog header ([34fde01](https://github.com/Atticuszz/python-uv/commit/34fde01407bc9178b68f1a30263fd62010ac63c3) by Atticuszz).
 
-- *(CI)* Fix release body path file
-- Fix ci if release conditions
+## [0.0.9](https://github.com/Atticuszz/python-uv/releases/tag/0.0.9) - 2024-10-23
 
-## [0.0.9] - 2024-10-23
+<small>[Compare with 0.0.8](https://github.com/Atticuszz/python-uv/compare/0.0.8...0.0.9)</small>
 
-### 🐛 Bug Fixes
+### Fixed
 
-- *(pyproject.toml)* Bug show
-- *(pyproject.toml)* Add local dev commitizen
+- fix(pyproject.toml): add local dev commitizen ([306ed88](https://github.com/Atticuszz/python-uv/commit/306ed888b155d69e88c3feb8d3069ddd911556dc) by Atticuszz).
+- fix(pyproject.toml): bug show ([2c99484](https://github.com/Atticuszz/python-uv/commit/2c994840ad8c9387445def6f871f52105faaf937) by Atticuszz).
 
-### 📚 Documentation
+## [0.0.8](https://github.com/Atticuszz/python-uv/releases/tag/0.0.8) - 2024-10-23
 
-- Test  docs
+<small>[Compare with 0.0.7](https://github.com/Atticuszz/python-uv/compare/0.0.7...0.0.8)</small>
 
-### ⚡ Performance
+### Fixed
 
-- Test pre
+- fix(.vscode): enable python package import plugin ([d16c227](https://github.com/Atticuszz/python-uv/commit/d16c227ecc0791f41a63945a26c440e3d157e7e9) by Atticuszz).
 
-### Bump
+## [0.0.7](https://github.com/Atticuszz/python-uv/releases/tag/0.0.7) - 2024-10-22
 
-- Version 0.0.8 → 0.0.9
+<small>[Compare with 0.0.6](https://github.com/Atticuszz/python-uv/compare/0.0.6...0.0.7)</small>
 
-## [0.0.8] - 2024-10-23
+### Fixed
 
-### 🐛 Bug Fixes
+- fix(main.yml): release condition is the commit message with bump: ([bb23238](https://github.com/Atticuszz/python-uv/commit/bb23238fd794a33faeeca8ea213498a588332b5a) by Atticuszz).
 
-- *(.vscode)* Enable python package import plugin
+## [0.0.6](https://github.com/Atticuszz/python-uv/releases/tag/0.0.6) - 2024-10-22
 
-### Bump
+<small>[Compare with 0.0.5](https://github.com/Atticuszz/python-uv/compare/0.0.5...0.0.6)</small>
 
-- Version 0.0.7 → 0.0.8
+### Fixed
 
-## [0.0.7] - 2024-10-22
+- fix(main.ci): failed to get tag to release ([20e6df8](https://github.com/Atticuszz/python-uv/commit/20e6df8a370c342f06c916b0be987778635175aa) by Atticuszz).
 
-### 🐛 Bug Fixes
+## [0.0.5](https://github.com/Atticuszz/python-uv/releases/tag/0.0.5) - 2024-10-20
 
-- *(main.yml)* Release condition is the commit message with bump:
+<small>[Compare with 0.0.4](https://github.com/Atticuszz/python-uv/compare/0.0.4...0.0.5)</small>
 
-### Bump
+### Fixed
 
-- Version 0.0.6 → 0.0.7
+- fix: pyproject.toml ([bde8332](https://github.com/Atticuszz/python-uv/commit/bde8332825924ec1f9012be1adb03c212b29484f) by Atticuszz).
+- fix(pyproject.toml): change_type_map ([cf3893d](https://github.com/Atticuszz/python-uv/commit/cf3893d057186a01bf7f999c623a269cbfad130e) by Atticuszz).
+- fix(pyproject.toml): add all change_type to changelog_pattern ([dd0eb0c](https://github.com/Atticuszz/python-uv/commit/dd0eb0cf80f008d7cb612f9ee93da506d0e25bb9) by Atticuszz).
+- fix(pyproject.toml): test fix ([55edaf0](https://github.com/Atticuszz/python-uv/commit/55edaf08973610a1d8ec6f12b6855cbd767906c6) by Atticuszz).
 
-## [0.0.6] - 2024-10-22
+## [0.0.4](https://github.com/Atticuszz/python-uv/releases/tag/0.0.4) - 2024-10-19
 
-### 🐛 Bug Fixes
+<small>[Compare with 0.0.3](https://github.com/Atticuszz/python-uv/compare/0.0.3...0.0.4)</small>
 
-- *(main.ci)* Failed to get tag to release
+### Fixed
 
-### 📚 Documentation
+- fix(.obsidian): remove obsidian-git plugin ([22bfe63](https://github.com/Atticuszz/python-uv/commit/22bfe630f8f8ad9176e922e96d929c7fb1e40048) by Atticuszz).
 
-- Update obsidian plugins
+## [0.0.3](https://github.com/Atticuszz/python-uv/releases/tag/0.0.3) - 2024-10-19
 
-### Bump
+<small>[Compare with 0.0.2](https://github.com/Atticuszz/python-uv/compare/0.0.2...0.0.3)</small>
 
-- Version 0.0.5 → 0.0.6
+### Fixed
 
-## [0.0.5] - 2024-10-20
+- fix(pre-commit-config.yaml): allow codespell to write changes ([72b1d5d](https://github.com/Atticuszz/python-uv/commit/72b1d5dfa1c363337a906e36ee31f917d00bfd08) by Atticuszz).
 
-### 🐛 Bug Fixes
+## [0.0.2](https://github.com/Atticuszz/python-uv/releases/tag/0.0.2) - 2024-10-19
 
-- *(pyproject.toml)* Test fix
-- *(pyproject.toml)* Add all change_type to changelog_pattern
-- *(pyproject.toml)* Change_type_map
-- Pyproject.toml
+<small>[Compare with first commit](https://github.com/Atticuszz/python-uv/compare/ff3326e3b594b48c0278efcbae583ad5e6245a34...0.0.2)</small>
 
-### 📚 Documentation
+### Fixed
 
-- *(mkdocs.yml)* Update site name and copyright
+- fix(CHANGELOG.md): test run commitizen ([7fa364d](https://github.com/Atticuszz/python-uv/commit/7fa364d60f2cccfe8ae7fb9dfdc772b01e152479) by Atticuszz).
+- fix: test commitizen ([f1d87bd](https://github.com/Atticuszz/python-uv/commit/f1d87bd1f0b71a5bf950e47b8cb71952a82bb1ce) by Atticuszz).
 
-### Bump
-
-- Version 0.0.4 → 0.0.5
-
-## [0.0.4] - 2024-10-19
-
-### 🐛 Bug Fixes
-
-- *(.obsidian)* Remove obsidian-git plugin
-
-### 📚 Documentation
-
-- *(docs/)* Remove git plugin of .obsidian and update all
-- *(README.md)* Update
-
-### 🎨 Styling
-
-- *(.obsidian)* Pre-commit run
-
-### ⚙️ Miscellaneous Tasks
-
-- *(docs.yml,-main.yml)* 1. update ci uses as @main instead of @v_number, 2. add bump and release
-
-### Bump
-
-- Version 0.0.3 → 0.0.4
-
-## [0.0.3] - 2024-10-19
-
-### 🐛 Bug Fixes
-
-- *(pre-commit-config.yaml)* Allow codespell to write changes
-
-### 📚 Documentation
-
-- *(mkdocs.yml)* Remove navigation.expand
-
-### Bump
-
-- Version 0.0.2 → 0.0.3
-
-## [0.0.2] - 2024-10-19
-
-### 🐛 Bug Fixes
-
-- Test commitizen
-- *(CHANGELOG.md)* Test run commitizen
-
-### 📚 Documentation
-
-- Initial commit
-
-### Bump
-
-- Version 0.0.1 → 0.0.2
-
-<!-- generated by git-cliff -->
