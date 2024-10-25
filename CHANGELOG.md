@@ -1,10 +1,27 @@
 # Changelog
 
+## [0.0.18] - 2024-10-25
+
+### 🐛 Bug Fixes
+
+- Pyproject.toml version
+
 ## [0.0.17] - 2024-10-25
 
 ### 🐛 Bug Fixes
 
+- Bumpverison files search name
+- CHANGELOG.md bump replace result
+
+## [0.0.16] - 2024-10-25
+
+### 🐛 Bug Fixes
+
 - Version in pyproject.toml
+
+### ⚙️ Miscellaneous Tasks
+
+- Add bump version to CHANGELOG.md
 
 ## [0.0.15] - 2024-10-25
 
