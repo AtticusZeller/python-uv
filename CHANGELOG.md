@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.0.23] - 2024-10-26
+
+### 🐛 Bug Fixes
+
+- *(CI)* Body->body_path context in release ci
+
 ## [0.0.22] - 2024-10-26
 
 ### 🐛 Bug Fixes
