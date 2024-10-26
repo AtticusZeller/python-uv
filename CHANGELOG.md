@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.0.21] - 2024-10-26
+
+### 🐛 Bug Fixes
+
+- *(CI)* Release ci can not read latest changes
+
+## [0.0.20] - 2024-10-26
+
+### ⚙️ Miscellaneous Tasks
+
+- Add notes for tool.bumpversion.allow_dirty=true
+
 ## [0.0.19] - 2024-10-25
 
 ### 🐛 Bug Fixes
