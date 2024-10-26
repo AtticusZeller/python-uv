@@ -11,7 +11,7 @@ repos:
         args: ["--unsafe"]
       - id: check-json
       - id: check-added-large-files
-        args: ['--maxkb=51200']
+        args: ["--maxkb=51200"]
       - id: debug-statements
       - id: end-of-file-fixer
       - id: trailing-whitespace
@@ -20,7 +20,8 @@ repos:
     rev: v2.3.0
     hooks:
       - id: codespell
-        files: \.(py|sh|rst|yml|yaml)$
+        files: \.(py|sh|rst|yml|yaml|md)$
+        exclude: (^|/)\..* # exclude hidden files or folder
         args: [--write-changes]
     # lint and format
   - repo: https://github.com/astral-sh/ruff-pre-commit
