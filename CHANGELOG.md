@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.0.25] - 2024-10-26
+## 0.0.25 - 2024-10-26
 
 ### 🐛 Bug Fixes
 
@@ -17,6 +17,7 @@ All notable changes to this project will be documented in this file.
 - *(VCS)* Add bump version shell
 - Fix typo in README.md
 - Clean config for git-cliff
+- *(release)* 0.0.24 → 0.0.25
 
 ## 0.0.23 - 2024-10-26
 
