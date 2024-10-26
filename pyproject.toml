@@ -1,6 +1,6 @@
 [project]
 name = "python-uv"
-version = "0.0.27"
+version = "0.0.28"
 
 description = ""
 authors = [{ name = "A.J.Zeller", email = "zhouge1831@gmail.com" }]
@@ -143,6 +143,8 @@ body = """
         - {% if commit.scope %}*({{ commit.scope }})* {% endif %}\
             {% if commit.breaking %}[**breaking**] {% endif %}\
             {{ commit.message | upper_first }}\
+            {% if commit.remote.pr_number %} in #{{ commit.remote.pr_number }}{%- endif %}\
+            {% if commit.remote.username %} by @{{ commit.remote.username }}{%- endif %}\
     {% endfor %}
 {% endfor %}\n
 """
@@ -201,7 +203,7 @@ sort_commits = "oldest"
 
 
 [tool.bumpversion]
-current_version = "0.0.27"
+current_version = "0.0.28"
 parse = "(?P<major>\\d+)\\.(?P<minor>\\d+)\\.(?P<patch>\\d+)"
 serialize = ["{major}.{minor}.{patch}"]
 search = "{current_version}"
