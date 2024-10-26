@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.0.22] - 2024-10-26
+
+### 🐛 Bug Fixes
+
+- *(CI)* Release without CHANGES.md
+
 ## [0.0.21] - 2024-10-26
 
 ### 🐛 Bug Fixes
