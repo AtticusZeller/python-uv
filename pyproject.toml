@@ -1,6 +1,6 @@
 [project]
 name = "python-uv"
-version = "0.0.19"
+version = "0.0.20"
 
 description = ""
 authors = [{ name = "A.J.Zeller", email = "zhouge1831@gmail.com" }]
@@ -224,10 +224,10 @@ setup_hooks = []
 pre_commit_hooks = []
 post_commit_hooks = []
 
-# [[tool.bumpversion.files]]
-# filename = "pyproject.toml"
-# search = 'version = "{current_version}"'
-# replace = 'version = "{new_version}"'
+[[tool.bumpversion.files]]
+filename = "pyproject.toml"
+search = 'version = "{current_version}"'
+replace = 'version = "{new_version}"'
 
 [[tool.bumpversion.files]]
 filename = "CHANGELOG.md"
