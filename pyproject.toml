@@ -135,7 +135,7 @@ body = """
 {% if version %}\
     ## {{ version | trim_start_matches(pat="v") }} - {{ timestamp | date(format="%Y-%m-%d") }}
 {% else %}\
-    ## [unreleased]
+    ## unreleased
 {% endif %}\
 {% for group, commits in commits | group_by(attribute="group") %}
     ### {{ group | striptags | trim | upper_first }}
@@ -199,11 +199,6 @@ topo_order = false
 # sort the commits inside sections by oldest/newest order
 sort_commits = "oldest"
 
-[tool.git-cliff.bump]
-features_always_bump_minor = true
-breaking_always_bump_major = true
-initial_tag = "0.0.1"
-bump_type = "patch"
 
 [tool.bumpversion]
 current_version = "0.0.26"
@@ -233,7 +228,7 @@ replace = 'version = "{new_version}"'
 
 [[tool.bumpversion.files]]
 filename = "CHANGELOG.md"
-search = "[unreleased]"
+search = "unreleased"
 replace = "{new_version} - {now:%Y-%m-%d}"
 
 # https://callowayproject.github.io/bump-my-version/reference/search-and-replace-config/
