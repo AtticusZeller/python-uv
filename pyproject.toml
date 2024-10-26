@@ -131,7 +131,7 @@ All notable changes to this project will be documented in this file.\n
 # https://keats.github.io/tera/docs/#introduction
 body = """
 {% if version %}\
-    ## [{{ version | trim_start_matches(pat="v") }}] - {{ timestamp | date(format="%Y-%m-%d") }}
+    ## {{ version | trim_start_matches(pat="v") }} - {{ timestamp | date(format="%Y-%m-%d") }}
 {% else %}\
     ## [unreleased]
 {% endif %}\
@@ -140,7 +140,7 @@ body = """
     {% for commit in commits %}
         - {% if commit.scope %}*({{ commit.scope }})* {% endif %}\
             {% if commit.breaking %}[**breaking**] {% endif %}\
-            {{ commit.message | split(pat="\n") | first | upper_first | trim }} ([{{ commit.id | truncate(length=7, end="") }}]({{ commit.id }}))\
+            {{ commit.message | upper_first }}\
     {% endfor %}
 {% endfor %}\n
 """
@@ -151,9 +151,9 @@ footer = """
 # remove the leading and trailings
 trim = true
 # postprocessors
-postprocessors = [
-  { pattern = '<REPO>', replace = "https://github.com/atticuszz/python-uv" }, # replace repository URL
-]
+# postprocessors = [
+#   { pattern = '<REPO>', replace = "https://github.com/atticuszz/python-uv" }, # replace repository URL
+# ]
 # render body even when there are no releases to process
 render_always = true
 # output file path
@@ -169,10 +169,7 @@ split_commits = false
 # regex for preprocessing the commit messages
 commit_preprocessors = [
   # Replace issue numbers
-  #{ pattern = '\((\w+\s)?#([0-9]+)\)', replace = "([#${2}](<REPO>/issues/${2}))"},
-  # Check spelling of the commit with https://github.com/crate-ci/typos
-  # If the spelling is incorrect, it will be automatically fixed.
-  #{ pattern = '.*', replace_command = 'typos --write-changes -' },
+#   { pattern = '\((\w+\s)?#([0-9]+)\)', replace = "([#${2}](<REPO>/issues/${2}))"},
 ]
 # regex for parsing and grouping commits
 commit_parsers = [
@@ -193,8 +190,6 @@ commit_parsers = [
 ]
 # filter out the commits that are not matched by commit parsers
 filter_commits = false
-# regex for skipping tags
-skip_tags = "beta|alpha"
 # sort the tags topologically
 topo_order = false
 # sort the commits inside sections by oldest/newest order
@@ -218,10 +213,10 @@ ignore_missing_files = false
 tag = true
 sign_tags = false
 tag_name = "v{new_version}"
-tag_message = "Bump version: {current_version} → {new_version}"
+tag_message = "chore(release): {current_version} → {new_version}"
 allow_dirty = true # git-cliff first then bump patch
 commit = true
-message = "Bump version: {current_version} → {new_version}"
+message = "chore(release): {current_version} → {new_version}"
 commit_args = ""
 setup_hooks = []
 pre_commit_hooks = []
