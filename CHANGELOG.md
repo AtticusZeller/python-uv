@@ -2,11 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.30 - 2024-10-26
+
+### ⚙️ Miscellaneous Tasks
+
+- *(Merge)* Pull request #2 from Atticuszz:test-PR in #2 by @Atticuszz
+
 ## 0.0.29 - 2024-10-26
 
 ### ⚙️ Miscellaneous Tasks
 
-- Remove commit_preprocessors on issue number
+- Remove commit_preprocessors on issue number by @Atticuszz
 
 ## 0.0.28 - 2024-10-26
 
