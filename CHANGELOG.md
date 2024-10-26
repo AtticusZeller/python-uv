@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.0.24] - 2024-10-26
+
+### 📚 Documentation
+
+- *(VCS)* Update CHANGELOG.md with link ([2f93240](2f93240ece18eff608c092cfafbff68bd7b47c62))
+
+### ⚙️ Miscellaneous Tasks
+
+- *(VCS)* Add bump version shell ([40578c2](40578c295c12d3930858741cd9bf531f7feceed2))
+
 ## [0.0.23] - 2024-10-26
 
 ### 🐛 Bug Fixes
