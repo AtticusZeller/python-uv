@@ -143,6 +143,8 @@ body = """
         - {% if commit.scope %}*({{ commit.scope }})* {% endif %}\
             {% if commit.breaking %}[**breaking**] {% endif %}\
             {{ commit.message | upper_first }}\
+            {% if commit.remote.pr_number %} in #{{ commit.remote.pr_number }}{%- endif %}\
+            {% if commit.remote.username %} by @{{ commit.remote.username }}{%- endif %}\
     {% endfor %}
 {% endfor %}\n
 """
