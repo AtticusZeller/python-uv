@@ -98,6 +98,7 @@ filterwarnings = ["error"]  # Treat all warnings as errors
 [tool.coverage.run]
 branch = true
 
+
 [tool.coverage.report]
 skip_covered = true
 show_missing = true
@@ -138,7 +139,7 @@ body = """
 {% endif %}\
 {% for group, commits in commits | group_by(attribute="group") %}
     ### {{ group | striptags | trim | upper_first }}
-    {% for commit in commits %}
+    {% for commit in commits| unique(attribute="message") %}
         - {% if commit.scope %}*({{ commit.scope }})* {% endif %}\
             {% if commit.breaking %}[**breaking**] {% endif %}\
             {{ commit.message | upper_first }}\
@@ -183,7 +184,7 @@ commit_parsers = [
   { message = "^refactor", group = "<!-- 2 -->🚜 Refactor" },
   { message = "^style", group = "<!-- 5 -->🎨 Styling" },
   { message = "^test", group = "<!-- 6 -->🧪 Testing" },
-  { message = "^chore\\(release\\): prepare for", skip = true },
+  { message = "^chore\\(release\\)", skip = true },
   { message = "^chore\\(deps.*\\)", skip = true },
   { message = "^chore\\(pr\\)", skip = true },
   { message = "^chore\\(pull\\)", skip = true },
@@ -233,6 +234,6 @@ replace = 'version = "{new_version}"'
 [[tool.bumpversion.files]]
 filename = "CHANGELOG.md"
 search = "[unreleased]"
-replace = "[{new_version}] - {now:%Y-%m-%d}"
+replace = "{new_version} - {now:%Y-%m-%d}"
 
 # https://callowayproject.github.io/bump-my-version/reference/search-and-replace-config/
