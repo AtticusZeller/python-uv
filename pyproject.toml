@@ -1,6 +1,6 @@
 [project]
 name = "python-uv"
-version = "0.0.27"
+version = "0.0.28"
 
 description = ""
 authors = [{ name = "A.J.Zeller", email = "zhouge1831@gmail.com" }]
@@ -203,7 +203,7 @@ sort_commits = "oldest"
 
 
 [tool.bumpversion]
-current_version = "0.0.27"
+current_version = "0.0.28"
 parse = "(?P<major>\\d+)\\.(?P<minor>\\d+)\\.(?P<patch>\\d+)"
 serialize = ["{major}.{minor}.{patch}"]
 search = "{current_version}"
