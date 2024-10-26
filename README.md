@@ -106,7 +106,7 @@ todo：codecov ci and replace coverage with it
 ### git-cliff
 
 We follow a specific format for commit messages to maintain a clear and organized project history.
-with `git-cliff` default confg
+with `git-cliff` default config
 
 - `feat:` New features or enhancements
 - `fix:` Bug fixes
