@@ -30,6 +30,7 @@ dev-dependencies = [
     "coverage>=7.6.1",
     "git-cliff>=2.6.1",
     "bump-my-version>=0.28.0",
+    "typos>=1.26.8",
 ]
 
 
@@ -169,7 +170,9 @@ split_commits = false
 # regex for preprocessing the commit messages
 commit_preprocessors = [
   # Replace issue numbers
-#   { pattern = '\((\w+\s)?#([0-9]+)\)', replace = "([#${2}](<REPO>/issues/${2}))"},
+  # { pattern = '\((\w+\s)?#([0-9]+)\)', replace = "([#${2}](<REPO>/issues/${2}))"},
+    # If the spelling is incorrect, it will be automatically fixed.
+    { pattern = '.*', replace_command = 'typos --write-changes -' }
 ]
 # regex for parsing and grouping commits
 commit_parsers = [

@@ -875,7 +875,7 @@ wheels = [
 
 [[package]]
 name = "python-uv"
-version = "0.0.9"
+version = "0.0.25"
 source = { virtual = "." }
 
 [package.optional-dependencies]
@@ -898,6 +898,7 @@ dev = [
     { name = "pytest" },
     { name = "pytest-sugar" },
     { name = "ruff" },
+    { name = "typos" },
 ]
 
 [package.metadata]
@@ -912,7 +913,7 @@ requires-dist = [
 
 [package.metadata.requires-dev]
 dev = [
-    { name = "bump-my-version" },
+    { name = "bump-my-version", specifier = ">=0.28.0" },
     { name = "coverage", specifier = ">=7.6.1" },
     { name = "git-cliff", specifier = ">=2.6.1" },
     { name = "mypy", specifier = ">=1.11.2" },
@@ -920,6 +921,7 @@ dev = [
     { name = "pytest", specifier = ">=8.3.2" },
     { name = "pytest-sugar", specifier = ">=1.0.0" },
     { name = "ruff", specifier = ">=0.6.3" },
+    { name = "typos" },
 ]
 
 [[package]]
@@ -1197,6 +1199,23 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/df/db/f35a00659bc03fec321ba8bce9420de607a1d37f8342eee1863174c69557/typing_extensions-4.12.2.tar.gz", hash = "sha256:1a7ead55c7e559dd4dee8856e3a88b41225abfe1ce8df57b7c13915fe121ffb8", size = 85321 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/26/9f/ad63fc0248c5379346306f8668cda6e2e2e9c95e01216d2b8ffd9ff037d0/typing_extensions-4.12.2-py3-none-any.whl", hash = "sha256:04e5ca0351e0f3f85c6853954072df659d0d13fac324d0072316b67d7794700d", size = 37438 },
+]
+
+[[package]]
+name = "typos"
+version = "1.26.8"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/92/64/9f13aeaf33f0ea40681508151bb3393d1d6461bceab70bd695c4ebbd4ce8/typos-1.26.8.tar.gz", hash = "sha256:b750d19531f6299d1c88d09af8db6998a5d92c2cca039220773140b3eb887cf3", size = 1112901 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/52/2c/b31a5be42d4ff91a0a7ba70f299cfc07826992c87a0e75cd7ba81432cf0f/typos-1.26.8-py3-none-macosx_10_12_x86_64.whl", hash = "sha256:77093a1aa72b3fa34b1914e73d149fa70c02157fbe39bd13d20a0cd64a7b7fdf", size = 2990167 },
+    { url = "https://files.pythonhosted.org/packages/94/29/fad80812079127beb9997424ac81c5d8c156eb6ae26f4495f116da46ec59/typos-1.26.8-py3-none-macosx_11_0_arm64.whl", hash = "sha256:3d9769ec255ef3291fcfadc2d270773f6491eeaf0f3120e370ccdb08d218e600", size = 2890116 },
+    { url = "https://files.pythonhosted.org/packages/05/3e/9abdb26cebe1091e2cf83627a54a555633a4aa375ed3982d4afce3159cbd/typos-1.26.8-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:526514dda6ac262626226ad0adbe7388c2a690c0ba972118c2c3eb245cf12e10", size = 4274983 },
+    { url = "https://files.pythonhosted.org/packages/12/eb/cc320d11f77913a345b0a7d2ff682f56f467585e483fb37e3dedf8d3b909/typos-1.26.8-py3-none-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:a926bc4b2ba76eda508da0d1f46eeaf4f1446cffff5cb0721aa0246e7d20654f", size = 3358796 },
+    { url = "https://files.pythonhosted.org/packages/70/c2/72da48ec76ac693fba2087def4aeed0e19facbe61713f03faa83aa066125/typos-1.26.8-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:985af8d669dd2fa124fc180de57ca82a5138d6ee49827784605c4717d0609105", size = 4062524 },
+    { url = "https://files.pythonhosted.org/packages/c4/e4/5d39b6c0bbe94f938f2156472799c60e7bad384d78b40ceef4ea381f09cc/typos-1.26.8-py3-none-musllinux_1_2_aarch64.whl", hash = "sha256:34eb03b2ab984ec2e3f59f16994b7c9f7bc9f8af3d0b013e9d344ebf59018df6", size = 3885748 },
+    { url = "https://files.pythonhosted.org/packages/c4/a7/a45ebf25850da3cba1abbaa4735958a52f006d25600d842fc1cd5475510b/typos-1.26.8-py3-none-musllinux_1_2_x86_64.whl", hash = "sha256:77006a3246d749d7fc0e46c35075607cd94b0fc64d19797ed840e6009fad5379", size = 4069568 },
+    { url = "https://files.pythonhosted.org/packages/55/6b/e1711105f6e2c2b8520224d7958f8c0d2479b85d83f5cc5f4648c0323c1a/typos-1.26.8-py3-none-win32.whl", hash = "sha256:b7282faf0504dd5a1484c0edbaa7daf5b2965e264d92dd1754161691fd77ed29", size = 2419713 },
+    { url = "https://files.pythonhosted.org/packages/98/30/61a936a904d99b67830cbed4f168102547fe687cac22acdb6d8a32c1b36b/typos-1.26.8-py3-none-win_amd64.whl", hash = "sha256:3da10e7560856a042de65b099f5f9bc846f3545ae3b121172872a533bea69e06", size = 2545192 },
 ]
 
 [[package]]
