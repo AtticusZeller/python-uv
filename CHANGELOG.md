@@ -2,11 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.29 - 2024-10-26
+
+### ⚙️ Miscellaneous Tasks
+
+- Remove commit_preprocessors on issue number
+
 ## 0.0.28 - 2024-10-26
 
 ### 🚀 Features
 
-- *(CHANGELOG)* Add pr number and author name after commit message via set remote repo for git-cliff
+- *(CHANGELOG)* Add pr number and author name after commit message via set remote repo for git-cliff by @Atticuszz
 
 ## 0.0.27 - 2024-10-26
 
