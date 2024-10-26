@@ -2,11 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.0.26] - 2024-10-26
+## 0.0.27 - 2024-10-26
 
 ### 🐛 Bug Fixes
 
-- Exclued hidden folder in pre-commit
+- Exclude hidden folder and file in pre-commit
 
 ### 📚 Documentation
 
@@ -17,8 +17,9 @@ All notable changes to this project will be documented in this file.
 - *(VCS)* Add bump version shell
 - Fix typo in README.md
 - Clean config for git-cliff
-- *(release)* 0.0.24 → 0.0.25
 - *(CHANGELOG)* Remove "[]" in version number
+- *(CHANGELOG)* Remove "[]" in version number and filter duplicate commit message
+- Remove duplicate config on git-cliff
 
 ## 0.0.23 - 2024-10-26
 
