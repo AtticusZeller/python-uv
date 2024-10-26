@@ -204,7 +204,7 @@ initial_tag = "0.0.1"
 bump_type = "patch"
 
 [tool.bumpversion]
-current_version = "0.0.19"
+current_version = "0.0.20"
 parse = "(?P<major>\\d+)\\.(?P<minor>\\d+)\\.(?P<patch>\\d+)"
 serialize = ["{major}.{minor}.{patch}"]
 search = "{current_version}"
@@ -224,10 +224,10 @@ setup_hooks = []
 pre_commit_hooks = []
 post_commit_hooks = []
 
-[[tool.bumpversion.files]]
-filename = "pyproject.toml"
-search = 'version = "{current_version}"'
-replace = 'version = "{new_version}"'
+# [[tool.bumpversion.files]]
+# filename = "pyproject.toml"
+# search = 'version = "{current_version}"'
+# replace = 'version = "{new_version}"'
 
 [[tool.bumpversion.files]]
 filename = "CHANGELOG.md"
