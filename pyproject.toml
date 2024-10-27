@@ -1,13 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
 name = "python-uv"
-version = "0.0.30"
-
-description = ""
+description = "python template package"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13"
+] # FROM: https://pypi.org/classifiers/
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
 authors = [{ name = "A.J.Zeller", email = "zhouge1831@gmail.com" }]
 maintainers = [{ name = "A.J.Zeller", email = "zhouge1831@gmail.com" }]
-requires-python = ">=3.10,<4.0"
-readme = "README.md"
-license = { file = "LICENSE" }
+
+dynamic = ["version"] # https://hatch.pypa.io/latest/config/metadata/#version
+
+[project.urls]
+Homepage = "https://github.com/aittcuszz/python-uv"
+Issues = "https://github.com/atticuszz/python-uv/issues"
+documentation = "https://atticuszz.github.io/python-uv/"
+Changelog = "https://github.com/atticuszz/python-uv/blob/main/CHANGELOG.md"
+
+[project.scripts] # build-backend config needed
+example_cli = "python_uv:main" # equal to from python import main; then run main()
+# FROM: https://packaging.python.org/en/latest/guides/writing-pyproject-toml/
 
 [project.optional-dependencies]
 mkdocs = [
@@ -18,7 +42,6 @@ mkdocs = [
     "mkdocs-publisher>=1.4.2",
     "pymdown-extensions>=10.11.1",
 ]
-
 
 [tool.uv]
 dev-dependencies = [
@@ -33,12 +56,54 @@ dev-dependencies = [
     "typos>=1.26.8",
 ]
 
+[tool.hatch.version]
+path = "src/python_uv/__init__.py"
+# FROM: https://hatch.pypa.io/latest/version/
 
+[tool.hatch.build.targets.wheel]
+packages = ["src/python_uv"]
+# FROM: https://hatch.pypa.io/latest/build/
+
+
+## Test
 [tool.mypy]
 strict = true
 exclude = ["venv", ".venv"]
 
+[tool.pytest.ini_options]
+# Set additional command line options for pytest=
+# -r= show extra test summary info
+# X= show extra info on xfailed tests
+# s= don't capture stdout (allow print statements)
+# --strict-config= any warnings about configuration are treated as errors
+# --strict-markers= treat unregistered markers as errors
+addopts = "-rXs --strict-config --strict-markers"
+xfail_strict = true         # Treat tests that are marked as xfail but pass as test failures
+filterwarnings = ["error"]  # Treat all warnings as errors
 
+[tool.coverage.run]
+branch = true
+
+[tool.coverage.report]
+skip_covered = true
+show_missing = true
+precision = 2
+exclude_lines = [
+    'def __repr__',
+    'pragma= no cover',
+    'raise NotImplementedError',
+    'if TYPE_CHECKING=',
+    'if typing.TYPE_CHECKING=',
+    '@overload',
+    '@typing.overload',
+    '\(Protocol\)=$',
+    'typing.assert_never',
+    'assert_never',
+    'if __name__ == .__main__.=',
+]
+
+
+## Linter and formatter
 [tool.ruff]
 # cover and extend the default config in https=//docs.astral.sh/ruff/configuration/
 extend-exclude = [""]
@@ -83,46 +148,14 @@ unfixable = ["B"]
 docstring-code-format = true
 skip-magic-trailing-comma = true
 
-
-[tool.pytest.ini_options]
-# Set additional command line options for pytest=
-# -r= show extra test summary info
-# X= show extra info on xfailed tests
-# s= don't capture stdout (allow print statements)
-# --strict-config= any warnings about configuration are treated as errors
-# --strict-markers= treat unregistered markers as errors
-addopts = "-rXs --strict-config --strict-markers"
-xfail_strict = true         # Treat tests that are marked as xfail but pass as test failures
-filterwarnings = ["error"]  # Treat all warnings as errors
-
-[tool.coverage.run]
-branch = true
-
-
-[tool.coverage.report]
-skip_covered = true
-show_missing = true
-precision = 2
-exclude_lines = [
-    'def __repr__',
-    'pragma= no cover',
-    'raise NotImplementedError',
-    'if TYPE_CHECKING=',
-    'if typing.TYPE_CHECKING=',
-    '@overload',
-    '@typing.overload',
-    '\(Protocol\)=$',
-    'typing.assert_never',
-    'assert_never',
-    'if __name__ == .__main__.=',
-]
-
 # Reference
 # 1. https=//github.com/Kludex/python-template/blob/main/template/%7B%7B%20project_slug%20%7D%7D/pyproject.toml.jinja
 # 2. https=//github.com/fastapi/full-stack-fastapi-template/blob/master/backend/pyproject.toml
 # 3. https=//github.com/pydantic/logfire
 # 4. https=//coverage.readthedocs.io/en/latest/index.html
 
+
+## VCS
 [tool.git-cliff.changelog]
 # template for the changelog header
 header = """
@@ -222,9 +255,7 @@ pre_commit_hooks = []
 post_commit_hooks = []
 
 [[tool.bumpversion.files]]
-filename = "pyproject.toml"
-search = 'version = "{current_version}"'
-replace = 'version = "{new_version}"'
+filename = "src/python_uv/__init__.py"
 
 [[tool.bumpversion.files]]
 filename = "CHANGELOG.md"
