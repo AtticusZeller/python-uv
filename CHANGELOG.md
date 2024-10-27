@@ -2,11 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.34 - 2024-10-27
+
+### 🐛 Bug Fixes
+
+- Test bump in ci
+
 ## 0.0.33 - 2024-10-27
 
 ### 🐛 Bug Fixes
 
-- *(CI)* Exclude all hidden folder and file on pre-commit
+- *(CI)* Exclude all hidden folder and file on pre-commit by @Atticuszz
 
 ## 0.0.32 - 2024-10-27
 
