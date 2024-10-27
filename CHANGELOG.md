@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.31 - 2024-10-27
+
+### 🚀 Features
+
+- Package python with uv
+
+### 🚜 Refactor
+
+- Remove src/* -> src/python_uv/* as a package
+
+### ⚙️ Miscellaneous Tasks
+
+- Update vscode plugin python import config
+
 ## 0.0.30 - 2024-10-26
 
 ### ⚙️ Miscellaneous Tasks
