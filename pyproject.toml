@@ -234,7 +234,7 @@ sort_commits = "oldest"
 
 
 [tool.bumpversion]
-current_version = "0.0.30"
+current_version = "0.0.31"
 parse = "(?P<major>\\d+)\\.(?P<minor>\\d+)\\.(?P<patch>\\d+)"
 serialize = ["{major}.{minor}.{patch}"]
 search = "{current_version}"
@@ -255,7 +255,7 @@ pre_commit_hooks = []
 post_commit_hooks = []
 
 [[tool.bumpversion.files]]
-filename = "__init__.py"
+filename = "src/python_uv/__init__.py"
 
 [[tool.bumpversion.files]]
 filename = "CHANGELOG.md"
