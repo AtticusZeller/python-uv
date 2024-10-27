@@ -85,7 +85,7 @@ jobs:
       - name: Generate a changelog
         env:
           ATTICUS_PAT: ${{ secrets.ATTICUS_PAT }}
-        run: git cliff --github-repo "${{ github.repository }}" -vv --latest --strip header --github-token "$ATTICUS_PAT" -o CHANGES.md
+        run: uv run git-cliff --github-repo "${{ github.repository }}" -vv --latest --strip header --github-token "$ATTICUS_PAT" -o CHANGES.md
 
       - name: Release
         uses: softprops/action-gh-release@v2
