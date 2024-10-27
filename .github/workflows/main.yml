@@ -50,9 +50,9 @@ jobs:
       version: ${{ steps.inspect_package.outputs.version }}
       package: ${{ steps.inspect_package.outputs.package }}
 
-    # environment:
-    #   name: pypi
-    #   url: https://pypi.org/project/${{ steps.inspect_package.outputs.package }}/${{ steps.inspect_package.outputs.version }}
+    environment:
+      name: pypi  # display pypi in page
+      url: https://pypi.org/project/${{ steps.inspect_package.outputs.package }}/${{ steps.inspect_package.outputs.version }}
 
     steps:
       - uses: actions/checkout@v4
