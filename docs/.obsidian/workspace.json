@@ -175,10 +175,7 @@
       "publish:Publish changes...": false,
       "random-note:Open random note": false,
       "workspaces:Manage workspace layouts": false,
-      "switcher:Open quick switcher": false,
-      "omnisearch:Omnisearch": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "oz-clear-unused-images:Clear Unused Images": false
+      "switcher:Open quick switcher": false
     }
   },
   "active": "fe33bc386c72aa8e",
