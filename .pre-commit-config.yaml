@@ -2,6 +2,7 @@
 # `pre-commit install` to set up the git hook scripts
 # `pre-commit autoupdate` to update repos
 # `pre-commit run --all-files` run hooks for all file
+exclude: (^|/)\..* # exclude hidden files or folder
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.2.0
@@ -15,13 +16,15 @@ repos:
       - id: debug-statements
       - id: end-of-file-fixer
       - id: trailing-whitespace
+      - id: detect-private-key
+      - id: destroyed-symlinks
+      - id: check-vcs-permalinks
     # spell check
   - repo: https://github.com/codespell-project/codespell
     rev: v2.3.0
     hooks:
       - id: codespell
         files: \.(py|sh|rst|yml|yaml|md)$
-        exclude: (^|/)\..* # exclude hidden files or folder
         args: [--write-changes]
     # lint and format
   - repo: https://github.com/astral-sh/ruff-pre-commit
