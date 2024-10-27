@@ -1,4 +1,4 @@
-from src.data import dict_operations, list_operations, tuple_operations
+from src.python_uv.data import dict_operations, list_operations, tuple_operations
 
 
 def test_list_operations() -> None:

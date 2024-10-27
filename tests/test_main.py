@@ -1,4 +1,4 @@
-from src.main import calculate_sum, greet
+from python_uv.main import calculate_sum, greet, main
 
 
 def test_greet() -> None:
@@ -9,3 +9,7 @@ def test_calculate_sum() -> None:
     assert calculate_sum(1, 2, 3) == 6
     assert calculate_sum() == 0
     assert calculate_sum(10) == 10
+
+
+def test_main() -> None:
+    main()

@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 
-from src.advanced import Animal, Dog, fibonacci, use_context_manager
+from src.python_uv.advanced import Animal, Dog, fibonacci, use_context_manager
 
 
 def test_fibonacci() -> None:
