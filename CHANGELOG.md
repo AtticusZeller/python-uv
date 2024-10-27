@@ -2,19 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
-## 0.0.31 - 2024-10-27
+## 0.0.32 - 2024-10-27
 
 ### 🚀 Features
 
-- Package python with uv
+- Package python with uv by @Atticuszz
+
+### 🐛 Bug Fixes
+
+- *(CI)* Add PAT token to git cliff by @Atticuszz
 
 ### 🚜 Refactor
 
-- Remove src/* -> src/python_uv/* as a package
+- Remove src/* -> src/python_uv/* as a package by @Atticuszz
 
 ### ⚙️ Miscellaneous Tasks
 
-- Update vscode plugin python import config
+- Update vscode plugin python import config by @Atticuszz
 
 ## 0.0.30 - 2024-10-26
 
