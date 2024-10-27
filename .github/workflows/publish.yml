@@ -57,3 +57,5 @@ jobs:
 
 # Reference
 # 1. https://github.com/Kludex/python-template/blob/main/.github/workflows/main.yml
+# 2. https://docs.pypi.org/trusted-publishers/adding-a-publisher/
+# add trusted-publishers on pypi first
