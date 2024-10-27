@@ -2,11 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.36 - 2024-10-27
+
+### 🐛 Bug Fixes
+
+- *(CI)* Uv run git-cliff
+
 ## 0.0.35 - 2024-10-27
 
 ### 🐛 Bug Fixes
 
-- Test bump
+- Test bump by @Atticuszz
 
 ## 0.0.34 - 2024-10-27
 
