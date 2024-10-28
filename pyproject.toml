@@ -43,8 +43,8 @@ mkdocs = [
     "pymdown-extensions>=10.11.1",
 ]
 
-[tool.uv]
-dev-dependencies = [
+[dependency-groups]
+dev = [
     "ruff>=0.6.3",
     "mypy>=1.11.2",
     "pre-commit>=3.8.0",
