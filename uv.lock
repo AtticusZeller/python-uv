@@ -875,18 +875,8 @@ wheels = [
 
 [[package]]
 name = "python-uv"
-version = "0.0.30"
+version = "0.0.36"
 source = { editable = "." }
-
-[package.optional-dependencies]
-mkdocs = [
-    { name = "mkdocs-git-revision-date-localized-plugin" },
-    { name = "mkdocs-glightbox" },
-    { name = "mkdocs-material" },
-    { name = "mkdocs-obsidian-bridge" },
-    { name = "mkdocs-publisher" },
-    { name = "pymdown-extensions" },
-]
 
 [package.dev-dependencies]
 dev = [
@@ -900,16 +890,16 @@ dev = [
     { name = "ruff" },
     { name = "typos" },
 ]
+docs = [
+    { name = "mkdocs-git-revision-date-localized-plugin" },
+    { name = "mkdocs-glightbox" },
+    { name = "mkdocs-material" },
+    { name = "mkdocs-obsidian-bridge" },
+    { name = "mkdocs-publisher" },
+    { name = "pymdown-extensions" },
+]
 
 [package.metadata]
-requires-dist = [
-    { name = "mkdocs-git-revision-date-localized-plugin", marker = "extra == 'mkdocs'", specifier = ">=1.2.9" },
-    { name = "mkdocs-glightbox", marker = "extra == 'mkdocs'", specifier = ">=0.4.0" },
-    { name = "mkdocs-material", marker = "extra == 'mkdocs'", specifier = ">=9.5.39" },
-    { name = "mkdocs-obsidian-bridge", marker = "extra == 'mkdocs'", specifier = ">=1.1.1" },
-    { name = "mkdocs-publisher", marker = "extra == 'mkdocs'", specifier = ">=1.4.2" },
-    { name = "pymdown-extensions", marker = "extra == 'mkdocs'", specifier = ">=10.11.1" },
-]
 
 [package.metadata.requires-dev]
 dev = [
@@ -922,6 +912,14 @@ dev = [
     { name = "pytest-sugar", specifier = ">=1.0.0" },
     { name = "ruff", specifier = ">=0.6.3" },
     { name = "typos", specifier = ">=1.26.8" },
+]
+docs = [
+    { name = "mkdocs-git-revision-date-localized-plugin", specifier = ">=1.2.9" },
+    { name = "mkdocs-glightbox", specifier = ">=0.4.0" },
+    { name = "mkdocs-material", specifier = ">=9.5.39" },
+    { name = "mkdocs-obsidian-bridge", specifier = ">=1.1.1" },
+    { name = "mkdocs-publisher", specifier = ">=1.4.2" },
+    { name = "pymdown-extensions", specifier = ">=10.11.1" },
 ]
 
 [[package]]

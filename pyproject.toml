@@ -34,14 +34,7 @@ example_cli = "python_uv:main" # equal to from python import main; then run main
 # FROM: https://packaging.python.org/en/latest/guides/writing-pyproject-toml/
 
 [project.optional-dependencies]
-mkdocs = [
-    "mkdocs-git-revision-date-localized-plugin>=1.2.9",
-    "mkdocs-glightbox>=0.4.0",
-    "mkdocs-material>=9.5.39",
-    "mkdocs-obsidian-bridge>=1.1.1",
-    "mkdocs-publisher>=1.4.2",
-    "pymdown-extensions>=10.11.1",
-]
+# optional deps for package installation
 
 [dependency-groups]
 dev = [
@@ -54,6 +47,14 @@ dev = [
     "git-cliff>=2.6.1",
     "bump-my-version>=0.28.0",
     "typos>=1.26.8",
+]
+docs = [
+ "mkdocs-git-revision-date-localized-plugin>=1.2.9",
+    "mkdocs-glightbox>=0.4.0",
+    "mkdocs-material>=9.5.39",
+    "mkdocs-obsidian-bridge>=1.1.1",
+    "mkdocs-publisher>=1.4.2",
+    "pymdown-extensions>=10.11.1",
 ]
 
 [tool.hatch.version]
