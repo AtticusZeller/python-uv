@@ -157,6 +157,10 @@ skip-magic-trailing-comma = true
 
 
 ## VCS
+[tool.git-cliff.remote.github]
+owner = "atticuszz"
+repo = "python-uv"
+
 [tool.git-cliff.changelog]
 # template for the changelog header
 header = """
