@@ -2,11 +2,31 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.37 - 2024-10-29
+
+### 🐛 Bug Fixes
+
+- Move docs deps from project.optional-dependencies to docs group by @Atticuszz
+- *(VCS)* Add git-cliff.remote.github to pyproject.toml instead of with remote repo options in cmd
+
+### 📚 Documentation
+
+- Update obsidian plugin by @Atticuszz
+
+### ⚙️ Miscellaneous Tasks
+
+- *(remove)* Duplicate publish.yml by @Atticuszz
+- Add .ruff_cache/* to `.gitignore` by @Atticuszz
+- Add py.typed in python_uv by @Atticuszz
+- Replace deprecated tool.uv dev-dependencies with dependency-groups by @Atticuszz
+- Pre-commit run by @Atticuszz
+- Remove .obsidian in root dir by @Atticuszz
+
 ## 0.0.36 - 2024-10-27
 
 ### 🐛 Bug Fixes
 
-- *(CI)* Uv run git-cliff
+- *(CI)* Uv run git-cliff by @Atticuszz
 
 ## 0.0.35 - 2024-10-27
 
