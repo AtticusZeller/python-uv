@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.39 - 2024-11-30
+
+### 🐛 Bug Fixes
+
+- Import python_uv. in tests
+
+### 📚 Documentation
+
+- Update how to install mkdocs  deps
+- Update obsidian config
+
+### ⚙️ Miscellaneous Tasks
+
+- *(clean)* Remove classifiers in toml
+
 ## 0.0.38 - 2024-11-05
 
 ### ⚙️ Miscellaneous Tasks
