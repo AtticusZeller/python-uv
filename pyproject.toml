@@ -5,16 +5,6 @@ build-backend = "hatchling.build"
 [project]
 name = "python-uv"
 description = "python template package"
-classifiers = [
-    "License :: OSI Approved :: MIT License",
-    "Programming Language :: Python",
-    "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12",
-    "Programming Language :: Python :: 3.13"
-] # FROM: https://pypi.org/classifiers/
 readme = "README.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
@@ -81,6 +71,7 @@ exclude = ["venv", ".venv"]
 addopts = "-rXs --strict-config --strict-markers"
 xfail_strict = true         # Treat tests that are marked as xfail but pass as test failures
 filterwarnings = ["error"]  # Treat all warnings as errors
+pythonpath = "src/python_uv/"
 
 [tool.coverage.run]
 branch = true
