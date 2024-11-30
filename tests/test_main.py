@@ -1,4 +1,4 @@
-from python_uv.main import calculate_sum, greet, main
+from src.python_uv.main import calculate_sum, greet, main
 
 
 def test_greet() -> None:
