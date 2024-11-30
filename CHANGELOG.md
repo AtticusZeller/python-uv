@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.40 - 2024-11-30
+
+### 📚 Documentation
+
+- Add docs.sh to simplify dev with mkdocs
+
+### CI
+
+- Remove publish to pypi
+
 ## 0.0.39 - 2024-11-30
 
 ### 🐛 Bug Fixes
