@@ -25,7 +25,7 @@
 mkdocs deps
 
 ```bash
-uv add mkdocs-material pymdown-extensions mkdocs-glightbox mkdocs-git-revision-date-localized-plugin mkdocs-obsidian-bridge mkdocs-publisher --optional mkdocs
+uv sync --group docs
 ```
 
 ### pre-commit
@@ -117,4 +117,3 @@ with `git-cliff` default config
 - `test:` Adding or modifying tests
 - `chore:` Routine tasks, maintenance, or tooling changes
 - `revert:` Reverting a previous commit
-### copier
