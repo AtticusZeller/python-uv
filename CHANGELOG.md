@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.41 - 2025-01-07
+
+### 🐛 Bug Fixes
+
+- Remove repo user
+
+### ⚙️ Miscellaneous Tasks
+
+- Update pre-commit
+- *(CI)* Update astral-sh/setup-uv
+
 ## 0.0.40 - 2024-11-30
 
 ### 📚 Documentation
