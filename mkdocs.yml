@@ -2,11 +2,11 @@
 
 # Project information
 site_name: python-uv
-site_url: https://atticuszz.github.io/python-uv
+site_url: https://atticuszeller.github.io/python-uv
 
 # Repository
 # To display a link to the repository of your project as part of your documentation: https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/?h=edit+uri#code-actions-edit-this-page:~:text=In%20order%20to%20display%20a%20link%20to%20the%20repository%20of%20your%20project%20as%20part%20of%20your%20documentation
-repo_url: https://github.com/Atticuszz/python-uv
+repo_url: https://github.com/atticuszeller/python-uv
 repo_name: python-uv
 edit_uri: edit/main/docs
 
@@ -112,7 +112,7 @@ extra:
     - icon: fontawesome/solid/paper-plane
       link: mailto:zhouge1831@gmail.com
     - icon: fontawesome/brands/github
-      link: https://github.com/Atticuszz
+      link: https://github.com/atticuszeller
     - icon: fontawesome/brands/linkedin
       link: https://hk.linkedin.com/in/atticus-zhou-250a88323
 
