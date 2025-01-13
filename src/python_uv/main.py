@@ -6,5 +6,5 @@ def calculate_sum(*args: int) -> int:
     return sum(args)
 
 
-def main() -> None:
+if __name__ == "__main__":
     print(greet("World"))

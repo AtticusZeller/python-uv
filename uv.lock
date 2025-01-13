@@ -875,7 +875,7 @@ wheels = [
 
 [[package]]
 name = "python-uv"
-version = "0.0.40"
+version = "0.0.41"
 source = { editable = "." }
 
 [package.dev-dependencies]

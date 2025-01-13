@@ -38,3 +38,12 @@ repos:
       - id: ruff-format
     repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.9.0
+  - hooks:
+      - description: Runs hadolint to lint Dockerfiles
+        entry: hadolint
+        id: hadolint
+        language: system
+        name: Lint Dockerfiles
+        types: ["dockerfile"]
+    repo: https://github.com/hadolint/hadolint
+    rev: v2.12.0
