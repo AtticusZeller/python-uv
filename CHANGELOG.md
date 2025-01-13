@@ -2,11 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
-## 0.0.41 - 2025-01-07
+## 0.0.42 - 2025-01-13
+
+### 🚀 Features
+
+- Add dockerfile
 
 ### 🐛 Bug Fixes
 
 - Update remote repo user
+- Author info
 
 ### ⚙️ Miscellaneous Tasks
 
