@@ -179,5 +179,7 @@
 # Custom
 .pre-commit-config.yaml
 assets
-pyrightconfig.json
+docs
+CHANGELOG.md
+mkdocs.yml
 tests
