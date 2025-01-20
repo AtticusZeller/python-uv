@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-#  run `uv sync --group`` first
+#  run `uv sync --group docs`` first
 if [ "$1" == "dev" ]; then
     uv run mkdocs serve
 elif [ "$1" == "deploy" ]; then
