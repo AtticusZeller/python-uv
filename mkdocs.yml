@@ -1,4 +1,4 @@
-# Copyright (c) 2016-2024 A.J.Zeller <zhouge1831@gmail.com>
+# Copyright (c) 2016-2024 A.J.Zeller <hello@atticux.me>
 
 # Project information
 site_name: python-uv
@@ -110,7 +110,7 @@ plugins:
 extra:
   social:
     - icon: fontawesome/solid/paper-plane
-      link: mailto:zhouge1831@gmail.com
+      link: mailto:hello@atticux.me
     - icon: fontawesome/brands/github
       link: https://github.com/atticuszeller
     - icon: fontawesome/brands/linkedin
