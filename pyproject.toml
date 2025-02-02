@@ -57,15 +57,11 @@ strict  = true
 exclude = ["venv", ".venv"]
 
 [tool.pytest.ini_options]
-# Set additional command line options for pytest=
-# -r= show extra test summary info
-# X= show extra info on xfailed tests
-# s= don't capture stdout (allow print statements)
-# --strict-config= any warnings about configuration are treated as errors
-# --strict-markers= treat unregistered markers as errors
-addopts        = "-rXs --strict-config --strict-markers"
-xfail_strict   = true                                    # Treat tests that are marked as xfail but pass as test failures
-filterwarnings = ["error"]                               # Treat all warnings as errors
+# Set additional command line options for pytest
+# Ref: https://docs.pytest.org/en/stable/reference/reference.html#command-line-flags
+addopts = "-rXs --strict-config --strict-markers --tb=short"
+xfail_strict = true         # Treat tests that are marked as xfail but pass as test failures
+filterwarnings = ["error"]  # Treat all warnings as errors
 pythonpath     = "src/python_uv/"
 
 [tool.coverage.run]
