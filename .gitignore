@@ -162,7 +162,5 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 .idea/
 
-# VS Code
 .vscode/settings.json
-.
-.devcontainer
+.vscode/PythonImportHelper-v2-Completion.json
