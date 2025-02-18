@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.43 - 2025-02-18
+
+### 🚀 Features
+
+- Pre-commit.sh
+
+### 📚 Documentation
+
+- Update docs.sh comment
+- Clean README.md
+- Update author email
+
+### 🧪 Testing
+
+- Add debug config
+
+### ⚙️ Miscellaneous Tasks
+
+- Enable PYTHONUNBUFFERED
+- Update .dockerignore
+- Update pre-commit
+- Remove .obsidian/ and .vscode
+- Update uv.lock
+- Update shebang
+- Add vscode settings.json
+
 ## 0.0.42 - 2025-01-13
 
 ### 🚀 Features
