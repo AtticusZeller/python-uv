@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.45 - 2025-02-22
+
+### 🐛 Bug Fixes
+
+- Docs build
+
 ## 0.0.44 - 2025-02-22
 
 ### 🐛 Bug Fixes
