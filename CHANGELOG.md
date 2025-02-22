@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.44 - 2025-02-22
+
+### 🐛 Bug Fixes
+
+- Release ci token
+
+### 📚 Documentation
+
+- Update mkdocs config
+- Simplify docs build ci
+
 ## 0.0.43 - 2025-02-18
 
 ### 🚀 Features
