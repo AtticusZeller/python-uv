@@ -96,9 +96,6 @@ plugins:
       obsidian_dir: .obsidian
       backlinks:
         enabled: true
-      callouts:
-        enabled: true
-        indentation: spaces
       # links:
       #   wikilinks_enabled: true
       #   img_lazy: true
@@ -160,25 +157,27 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
   # mermaid
-  # - pymdownx.superfences:
-  #     custom_fences:
-  #       - name: mermaid
-  #         class: mermaid
-  #         format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   # emoji
-  # - pymdownx.emoji:
-  #     emoji_index: !!python/name:material.extensions.emoji.twemoji
-  #     emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   # Image
   - md_in_html
+  # callouts
+  - obsidian_callouts
 
 # math and mermaid
 extra_javascript:
-  # - js/katex.js
-  # - https://unpkg.com/katex@0/dist/katex.min.js
+  - js/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
   - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
   - https://unpkg.com/mermaid/dist/mermaid.min.js
 
-# extra_css:
-#   # katex.js
-#   - https://unpkg.com/katex@0/dist/katex.min.css
+extra_css:
+  # katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.css

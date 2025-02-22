@@ -1,13 +1,23 @@
 #!/usr/bin/env bash
 
-#  run `uv sync --group docs`` first
+# with plugins
+run_uvx() {
+    uvx --with mkdocs-material \
+        --with mkdocs-git-revision-date-localized-plugin \
+        --with mkdocs-glightbox \
+        --with mkdocs-obsidian-bridge \
+        --with mkdocs-publisher \
+        --with pymdown-extensions \
+        "$@"
+}
+
 if [ "$1" == "dev" ]; then
-    uv run mkdocs serve
+    run_uvx mkdocs serve
 elif [ "$1" == "deploy" ]; then
-    uv run mkdocs gh-deploy --force
+    run_uvx mkdocs gh-deploy --force
 elif [ "$1" == "build" ]; then
-    uv run mkdocs build
+    run_uvx mkdocs build
 else
-    echo "usage: $0 {dev|deploy|build}"
+    echo "usage: $0 {dev|deploy}"
     exit 1
 fi
