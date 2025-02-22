@@ -25,9 +25,7 @@ jobs:
           enable-cache: true
 
       - name: install dependencies and deploy
-        run: |
-          uv sync --only-group docs
-          uv run mkdocs gh-deploy --force
+        run: bash scripts/docs.sh deploy
 
 # Reference
 # 1. https://squidfunk.github.io/mkdocs-material/publishing-your-site/
