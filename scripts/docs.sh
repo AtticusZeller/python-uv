@@ -6,7 +6,6 @@ run_uvx() {
         --with mkdocs-git-revision-date-localized-plugin \
         --with mkdocs-glightbox \
         --with mkdocs-obsidian-bridge \
-        --with mkdocs-publisher \
         --with pymdown-extensions \
         "$@"
 }

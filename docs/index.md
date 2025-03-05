@@ -2,15 +2,25 @@
 
 <h1 align="center">Hi there, I'm Atticus Zeller 👋</h1>
 
-- 🔭 I’m currently working on __computer vision like deep learning and 3D-reconstruction__
-- ⚡ Fun fact: __I'm also an analog photography enthusiast and a sports aficionado__
+🔭 I'm currently working on computer vision, deep learning, and 3D-reconstruction research projects.
 
-<h3 align="left">Languages and Tools:</h3>
+🌱 Currently completing my undergraduate studies and preparing for postgraduate studies in Artificial Intelligence.
 
-<a href="https://github.com/atticuszeller">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=atticuszeller&layout=compact&langs_count=8&card_width=320&theme=tokyonight&hide_border=true" />
-</a>
+🛠️ Tech Stack:
 
-<a href="https://github.com/atticuszeller">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=atticuszeller&theme=tokyonight&hide_border=true" />
-</a>
+* Programming languages: Python | C++
+* Frontend: Streamlit
+* Backend: FastAPI | SQL databases
+* DevOps: Linux | Shell | Git | Docker
+* Deep Learning: PyTorch | NumPy | Weights & Biases
+
+⚡ Fun fact: I'm also an avid reader and a sports aficionado
+
+📫 How to reach me:
+
+* Email: __hello@atticux.me__
+
+🎓 Academic Profile:
+
+* ORCID: [https://orcid.org/0009-0008-5460-325X](https://orcid.org/0009-0008-5460-325X)
+* [GSplatLoc: Ultra-Precise Camera Localization via 3D Gaussian Splatting](https://arxiv.org/abs/2412.20056)

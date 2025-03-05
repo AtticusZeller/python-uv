@@ -92,13 +92,6 @@ plugins:
 
   # adjust to obsidian path
   - obsidian-bridge
-  - pub-obsidian: # https://mkdocs-publisher.github.io/setup/installation/
-      obsidian_dir: .obsidian
-      backlinks:
-        enabled: true
-      # links:
-      #   wikilinks_enabled: true
-      #   img_lazy: true
   # image zoom
   - glightbox
   - search
