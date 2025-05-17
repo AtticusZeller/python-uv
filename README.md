@@ -11,3 +11,12 @@
 [![Docker](https://github.com/atticus/python-uv/actions/workflows/docker.yml/badge.svg)](https://github.com/atticuszeller/python-uv/actions/workflows/docker.yml)
 
 </div>
+
+## 🛠️ Installation
+
+```bash
+# install dependencies
+uv sync --dev
+# install project as a package
+uv pip install -e .
+```
