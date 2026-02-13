@@ -25,7 +25,7 @@ jobs:
           enable-cache: true
 
       - name: install dependencies and deploy
-        run: bash scripts/docs.sh deploy
+        run: bash dev.sh docs deploy
 
 # Reference
 # 1. https://squidfunk.github.io/mkdocs-material/publishing-your-site/
