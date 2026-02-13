@@ -31,10 +31,10 @@ jobs:
         run: uv sync --python ${{ matrix.python-version }} --all-extras --dev
 
       - name: Run tests
-        run: uv run bash scripts/test.sh
+        run: uv run bash dev.sh test
 
       - name: Run linters
-        run: uv run bash scripts/lint.sh
+        run: uv run bash dev.sh lint
 
   release:
     name: Bump Version and Release
