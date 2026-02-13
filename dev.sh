@@ -110,9 +110,6 @@ case "$1" in
         run_format
         ;;
     lint)
-        run_lint
-        ;;
-    test)
         shift
         run_test "$@"
         ;;
